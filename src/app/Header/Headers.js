@@ -38,7 +38,7 @@ function Headers() {
 
             <Link
               className={styles.headLink}
-              href="/store"
+              href="/Store"
               onMouseEnter={() => handleMenuHover("shopping")}
               onMouseLeave={handleMenuLeave}
             >

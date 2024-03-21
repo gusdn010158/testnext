@@ -69,8 +69,49 @@
 .btleft > a:hover {
   color: skyblue;
 }
+.btright {
+  width: 170px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .top {
-  width: 100px;
-  height: 100px;
-  background-color: bisque;
+  display: Flex;
+  justify-content: center;
+  align-items: center;
+  width: 70px;
+  height: 20px;
+}
+.slickTop {
+  width: 120px;
+  height: 20px;
+}
+.Slider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.toast {
+  top: 70px;
+  right: 320px;
+  position: absolute;
+  border-radius: 5px;
+  border: 1px solid gray;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  background-color: rgb(255, 255, 255);
+}
+.toasttop {
+  display: Flex;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: 50px;
+}
+.toasth2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
