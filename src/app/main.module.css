@@ -64,13 +64,11 @@
   display: flex;
   flex-direction: column;
 }
-.ctitem {
-  display: Flex;
-}
+
 .ctitem1 {
   margin: 10px;
-  width: 250px;
+
   background-repeat: no-repeat;
   background-position: center;
-  height: 500px;
+  height: 300px;
 }

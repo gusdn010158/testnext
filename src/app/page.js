@@ -2,7 +2,8 @@
 import styles from "./main.module.css";
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import Link from "next/link";
+
+import Slick from "./SlickP/Slick";
 export default function Home() {
   const [main, setMain] = useState([]);
   const [two, setTwo] = useState([]);
@@ -25,29 +26,15 @@ export default function Home() {
           <div className={styles.mainad2}></div>
         </div>
         <div className={styles.mainitem}>
-          {main.map((m, id) => (
+          {main.map((m) => (
             <div className={styles.mainitem1}>
               <img className={styles.img1} alt="12" src={m.img} />
               <div>{m.name}</div>
             </div>
           ))}
         </div>
-        <div className={styles.mainct}>
-          <div className={styles.mainctop}>
-            <div>
-              <h4>이런 사진을 찾고있나요?</h4>
-              <div>좋아하실 만한 인테리어 콘텐츠를 추천해드려요</div>
-            </div>
-            <Link href="/">더보기</Link>
-          </div>
-          <div className={styles.ctitem}>
-            {two.map((m, id) => (
-              <div className={styles.ctitem1}>
-                <img alt="12" src={m.img} />
-              </div>
-            ))}
-          </div>
-        </div>
+
+        <Slick />
       </div>
     </div>
   );

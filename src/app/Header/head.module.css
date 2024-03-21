@@ -34,6 +34,10 @@
   text-decoration: none;
   color: black;
 }
+.headLink:hover {
+  color: skyblue;
+}
+
 .headlogin div {
   background-color: rgb(23, 139, 216);
   width: 100px;
@@ -42,4 +46,31 @@
   align-items: center;
   justify-content: center;
   color: white;
+}
+.headerbt {
+  border-bottom: 1px solid rgb(153, 149, 149);
+  height: 50px;
+  display: Flex;
+  align-items: center;
+  padding-left: 360px;
+  padding-right: 360px;
+  justify-content: space-between;
+}
+.btleft {
+  display: flex;
+  width: 900px;
+  justify-content: space-around;
+}
+.btleft > a {
+  color: black;
+  text-decoration: none;
+}
+
+.btleft > a:hover {
+  color: skyblue;
+}
+.top {
+  width: 100px;
+  height: 100px;
+  background-color: bisque;
 }
