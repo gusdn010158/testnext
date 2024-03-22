@@ -136,6 +136,63 @@
       "img": "https://image.ohou.se/i/bucketplace-v2-development/uploads/productions/168126516576963586.jpg?gif=1&w=640&h=640&c=c&webp=1",
       "text": "HP 15-fd0096TU 13세대i5/윈11/가성비 가벼운 사무용 대학생 인강용 노트북",
       "price": "860,520"
+    },
+    {
+      "name": "LG전자",
+      "img": "https://image.ohou.se/i/bucketplace-v2-development/uploads/productions/168266558366770905.png?gif=1&w=640&h=640&c=c&webp=1",
+      "text": "트롬 오브제컬렉션 워시타워 W20WANQ",
+      "price": "2,499,000"
+    },
+
+    {
+      "name": "삼성전자",
+      "img": "https://image.ohou.se/i/bucketplace-v2-development/uploads/productions/164497864137030916.jpg?gif=1&w=640&h=640&c=c&webp=1",
+      "text": "혜택가 45만원대 비스포크 제트 무선청소기220W VS20B956AXE",
+      "price": "580,000"
+    },
+    {
+      "name": "휴도",
+      "img": "https://image.ohou.se/i/bucketplace-v2-development/uploads/productions/165580847056056090.jpg?gif=1&w=640&h=640&c=c&webp=1",
+      "text": "[쿠폰가103,550]편안한 제주 25cm 필로우탑 본넬스프링 침대 매트리스S/SS/Q/K",
+      "price": "109,000"
+    },
+    {
+      "name": "LG전자",
+      "img": "https://image.ohou.se/i/bucketplace-v2-development/uploads/productions/168429989971225448.jpg?gif=1&w=640&h=640&c=c&webp=1",
+      "text": "LG 디오스 식기세척기 오브제컬렉션 DUBJ2EAL",
+      "price": "1,078,000"
+    },
+    {
+      "name": "한샘",
+      "img": "https://image.ohou.se/i/bucketplace-v2-development/uploads/productions/165882516717645937.jpg?gif=1&w=640&h=640&c=c&webp=1",
+      "text": "한샘몰pick티렌토 리세 아쿠아텍스 3인용 패브릭 소파 3colors",
+      "price": "282,900"
+    }
+  ],
+  "store2": [
+    {
+      "name": "헬로우 슬립",
+      "img": "https://image.ohou.se/i/bucketplace-v2-development/uploads/productions/169821856938204382.jpg?gif=1&w=640&h=640&c=c&webp=1",
+      "text": "[10%쿠폰] NEW컬러 부드러운 카스테라 워싱 항균 옥수수솜간절기/사계절 차렵이불세트",
+      "price": "35900"
+    },
+    {
+      "name": "수면밀도",
+      "img": "https://image.ohou.se/i/bucketplace-v2-development/uploads/productions/169657816330556788.jpg?gif=1&w=640&h=640&c=c&webp=1",
+      "text": "[오늘의딜] 허리 디스크 환자가 만든 코어 릴랙스 매트리스 S,SS,Q,K",
+      "price": "299,000"
+    },
+    {
+      "name": "한샘",
+      "img": "https://image.ohou.se/i/bucketplace-v2-development/uploads/productions/165959279812235613.jpg?gif=1&w=640&h=640&c=c&webp=1",
+      "text": "한샘몰pick 눕 데일리 구스 아쿠아텍스 패브릭 모듈 소파 4인용3colors",
+      "price": "724,900"
+    },
+    {
+      "name": "웰퍼니쳐",
+      "img": "https://prs.ohou.se/apne2/any/uploads/productions/v1-189531249586240.jpg?gif=1&w=640&h=640&c=c&webp=1",
+      "text": "[쿠폰+무료내림]허리엔 더매직 허리특화 포켓스프링 매트리스 S/SS/Q/K/SK",
+      "price": "229,000"
     }
   ]
 }

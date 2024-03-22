@@ -16,6 +16,7 @@
 .storein3 {
   display: flex;
   width: 1300px;
+  padding: 20px;
   justify-content: space-between;
 }
 .storeflex {
@@ -23,16 +24,68 @@
   flex-wrap: wrap;
   width: 1300px;
 }
+
 .storeitem {
-  margin: 20px;
-  width: 280px;
-  height: 450px;
+  margin: 12px;
+  width: 300px;
+  height: 460px;
+  display: flex;
+  flex-direction: column;
+}
+.storeimgtem {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 270px;
+  height: 280px;
 }
 .storeimg {
-  border-radius: 3px;
+  border-radius: 5px;
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: inherit;
-  width: 280px;
+  width: 270px;
   height: 280px;
+}
+.storeimg:hover {
+  width: 290px;
+  height: 300px;
+}
+.sticon {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: inherit;
+  width: 120px;
+  height: 100px;
+}
+.sti {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.stitem {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: space-around;
+  width: 1300px;
+  height: 120px;
+}
+.emr {
+  margin-top: 10px;
+
+  background-color: brown;
+  width: 35px;
+  border-radius: 5px;
+  color: white;
+}
+.gkf {
+  margin-top: 10px;
+  width: 70px;
+  border-radius: 5px;
+  border: 1px solid black;
+}
+.vmffjt {
+  display: flex;
+  flex-direction: column;
 }
