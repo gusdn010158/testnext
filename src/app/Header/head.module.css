@@ -93,6 +93,7 @@
   align-items: center;
 }
 .toast {
+  z-index: 99;
   top: 70px;
   right: 320px;
   position: absolute;
