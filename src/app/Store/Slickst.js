@@ -7,16 +7,7 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 function Slickst() {
   const [T, setT] = useState([]);
-  function SampleNextArrow(props) {
-    const { className, onClick } = props;
 
-    return <div className={className} onClick={onClick} />;
-  }
-
-  function SamplePrevArrow(props) {
-    const { className, onClick } = props;
-    return <div className={className} onClick={onClick} />;
-  }
   useEffect(() => {
     axios.get("http://localhost:3001/storeitem").then((res) => {
       setT(res.data);
@@ -28,11 +19,10 @@ function Slickst() {
     autoplay: true, // 자동 넘김 활성화
     autoplaySpeed: 5000, // 자동 넘김 속도 (ms)
     slidesToShow: 1,
+
     slidesToScroll: 1,
     arrows: true,
     pauseOnHover: true,
-    nextArrow: <SampleNextArrow />,
-    prevArrow: <SamplePrevArrow />,
   };
   return (
     <div>
@@ -60,14 +50,11 @@ const StyledSlider = styled(Slider)`
   .slick-prev:before,
   .slick-next:before {
     font-size: 30px;
-    opacity: 1;
+    opacity: 0.3;
     color: black;
   }
-  li button:before {
-    color: white;
-  }
-
-  li.slick-active button:before {
-    color: white;
+  .slick-prev:before:hover,
+  .slick-next:before:hover {
+    opacity: 1;
   }
 `;

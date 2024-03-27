@@ -22,6 +22,8 @@ export default function Slick() {
     arrows: true, // 양 끝 화살표 생성여부
     nextArrow: <CustomNextArrow className="slick-next" />,
     prevArrow: <CustomPrevArrow className="slick-prev" />,
+    slidesToScroll: 4,
+
     // dots: true, // 슬라이더 아래에 슬라이드 개수를 점 형태로 표시
     // infinite: true, // 슬라이드가 맨 끝에 도달했을 때 처음 슬라이드를 보여줄지 여부
     slidesToShow: 4, // 화면에 한번에 표시할 슬라이드 개수 설정

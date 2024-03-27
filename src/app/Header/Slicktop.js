@@ -26,6 +26,7 @@ const Slicktop = () => {
     slidesToShow: 1,
     slidesToScroll: 1,
     arrows: false,
+    vertical: true,
     pauseOnHover: true,
   };
 
