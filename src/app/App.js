@@ -1,9 +1,3 @@
-// "use client";
-
-// export const Root = () => {
-//   return <>{children}</>;
-// };
-
 import App from "next/app";
 import { appWithTranslation } from "next-i18next";
 

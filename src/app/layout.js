@@ -17,3 +17,4 @@ export default function RootLayout({ children }) {
     </html>
   );
 }
+//노출하고 노출하지않는 상태 store활용
