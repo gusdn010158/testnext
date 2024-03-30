@@ -1,33 +1,23 @@
 "use client";
-import React, { useState, useEffect } from "react";
-import axios from "axios";
+import React from "react";
+
 import Slickst from "./Slickst";
+
+import api from "@/services/api";
 import styles from "../Store/store.module.css";
 function page() {
-  const [T, setT] = useState([]);
-  const [d, setd] = useState([]);
-  const [a, seta] = useState([]);
-  useEffect(() => {
-    axios.get("http://localhost:3001/store").then((res) => {
-      setT(res.data);
-    });
-  }, []);
-  useEffect(() => {
-    axios.get("http://localhost:3001/store2").then((res) => {
-      seta(res.data);
-    });
-  }, []);
-  useEffect(() => {
-    axios.get("http://localhost:3001/mainitem").then((res) => {
-      setd(res.data);
-    });
-  });
+  const fristurl = "http://localhost:3001/store";
+  const secondurl = "http://localhost:3001/store2";
+  const smallurl = "http://localhost:3001/mainitem";
+  const friststoredata = api(fristurl);
+  const secondstoredata = api(secondurl);
+  const smalldata = api(smallurl);
   return (
     <div className={styles.store}>
       <Slickst />
       <div className={styles.storein}>
         <div className={styles.stitem}>
-          {d.map((m) => (
+          {smalldata.map((m) => (
             <div className={styles.sti}>
               <img className={styles.sticon} src={m.img} />
               <div>{m.name}</div>
@@ -40,7 +30,7 @@ function page() {
             <div>더보기</div>
           </div>
           <div className={styles.storeflex}>
-            {a.map((m) => (
+            {secondstoredata.map((m) => (
               <div className={styles.storeitem}>
                 <div className={styles.storeimgtem}>
                   <img className={styles.storeimg} src={m.img} />
@@ -59,7 +49,7 @@ function page() {
         </div>
         <h3>카테고리</h3>
         <div className={styles.stitem}>
-          {d.map((m) => (
+          {smalldata.map((m) => (
             <div className={styles.sti}>
               <img className={styles.sticon} src={m.img} />
               <div>{m.name}</div>
@@ -76,7 +66,7 @@ function page() {
           </div>
         </div>
         <div className={styles.storeflex}>
-          {T.map((m) => (
+          {friststoredata.map((m) => (
             <div className={styles.storeitem}>
               <div className={styles.storeimgtem}>
                 <img className={styles.storeimg} src={m.img} />

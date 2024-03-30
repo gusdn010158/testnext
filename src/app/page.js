@@ -1,23 +1,13 @@
 "use client";
 import styles from "./main.module.css";
-import React, { useState, useEffect } from "react";
-import axios from "axios";
+import React from "react";
 
-import Slick from "./SlickP/Slick";
+import api from "@/services/api";
+import Slick from "./MainSlick/Slick";
 export default function Home() {
-  const [main, setMain] = useState([]);
-  const [two, setTwo] = useState([]);
-
-  useEffect(() => {
-    axios.get("http://localhost:3001/mainitem").then((res) => {
-      setMain(res.data);
-    });
-  });
-  useEffect(() => {
-    axios.get("http://localhost:3001/ctitem").then((res) => {
-      setTwo(res.data);
-    });
-  });
+  const url = "http://localhost:3001/mainitem";
+  // API 호출
+  const data = api(url);
   return (
     <div className={styles.main}>
       <div className={styles.maincom}>
@@ -26,7 +16,7 @@ export default function Home() {
           <div className={styles.mainad2}></div>
         </div>
         <div className={styles.mainitem}>
-          {main.map((m) => (
+          {data.map((m) => (
             <div className={styles.mainitem1}>
               <img className={styles.img1} alt="12" src={m.img} />
               <div>{m.name}</div>

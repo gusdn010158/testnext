@@ -3,16 +3,13 @@ import Slider from "react-slick";
 import styled from "styled-components";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import React, { useState, useEffect } from "react";
-import axios from "axios";
-function Slickst() {
-  const [T, setT] = useState([]);
+import React from "react";
 
-  useEffect(() => {
-    axios.get("http://localhost:3001/storeitem").then((res) => {
-      setT(res.data);
-    });
-  }, []);
+import api from "@/services/api";
+function Slickst() {
+  const url = "http://localhost:3001/storeitem";
+  // API 호출
+  const data = api(url);
   const settings = {
     infinite: true,
     speed: 1000, // 넘어가는 속도 (ms)
@@ -27,7 +24,7 @@ function Slickst() {
   return (
     <div>
       <StyledSlider {...settings}>
-        {T.map((m) => (
+        {data.map((m) => (
           <img src={m.img} />
         ))}
       </StyledSlider>

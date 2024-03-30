@@ -141,7 +141,8 @@ import React, { useState } from "react";
 import styles from "../Header/head.module.css";
 import Link from "next/link";
 import { FaCartShopping } from "react-icons/fa6";
-import Slicktop from "./Slicktop";
+
+import SlicktopContainer from "./SlicktopContainer";
 
 function Headers() {
   const [activeMenu, setActiveMenu] = useState(null);
@@ -229,7 +230,7 @@ function Headers() {
               <Link href="/">육아</Link>
             </div>
             <div className={styles.btright}>
-              <Slicktop />
+              <SlicktopContainer />
             </div>
           </div>
         ))}
@@ -248,7 +249,7 @@ function Headers() {
             <Link href="/">기획전</Link>
           </div>
           <div className={styles.btright}>
-            <Slicktop />
+            <SlicktopContainer />
           </div>
         </div>
       )}
@@ -265,7 +266,7 @@ function Headers() {
             <Link href="/">아파트시공사례</Link>
           </div>
           <div className={styles.btright}>
-            <Slicktop />
+            <SlicktopContainer />
           </div>
         </div>
       )}
