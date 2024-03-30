@@ -1,9 +1,10 @@
 "use client";
 import styles from "./main.module.css";
 import React from "react";
-
 import api from "@/services/api";
-import Slick from "./MainSlick/Slick";
+
+import MainMid from "./Mainmid/MainMid";
+import Mid from "./MainMid2/Mid";
 export default function Home() {
   const url = "http://localhost:3001/mainitem";
   // API 호출
@@ -24,7 +25,8 @@ export default function Home() {
           ))}
         </div>
 
-        <Slick />
+        <MainMid />
+        <Mid />
       </div>
     </div>
   );

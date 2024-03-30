@@ -1,4 +1,3 @@
-"use client";
 import Slider from "react-slick";
 import styled from "styled-components";
 import "slick-carousel/slick/slick.css";
@@ -8,15 +7,15 @@ import React from "react";
 import api from "@/services/api";
 function Slickst() {
   const url = "http://localhost:3001/storeitem";
-  // API 호출
+
   const data = api(url);
+
   const settings = {
     infinite: true,
     speed: 1000, // 넘어가는 속도 (ms)
     autoplay: true, // 자동 넘김 활성화
     autoplaySpeed: 5000, // 자동 넘김 속도 (ms)
     slidesToShow: 1,
-
     slidesToScroll: 1,
     arrows: true,
     pauseOnHover: true,

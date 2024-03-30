@@ -1,7 +1,8 @@
+"use client";
 import { useState, useEffect } from "react";
 import axios from "axios";
 
-const useDataFetching = (url) => {
+const api = (url) => {
   const [data, setData] = useState([]);
 
   useEffect(() => {
@@ -13,4 +14,4 @@ const useDataFetching = (url) => {
   return data;
 };
 
-export default useDataFetching;
+export default api;

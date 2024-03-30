@@ -1,0 +1,6 @@
+.Midtop {
+  display: flex;
+}
+.Mid {
+  max-height: 200px;
+}

@@ -194,5 +194,23 @@
       "text": "[쿠폰+무료내림]허리엔 더매직 허리특화 포켓스프링 매트리스 S/SS/Q/K/SK",
       "price": "229,000"
     }
+  ],
+  "MidTwo": [
+    {
+      "img": "https://image.ohou.se/i/bucketplace-v2-development/uploads/cards/project/170889695822213659.jpg?w=1920&h=609&c=c",
+      "title": "다르긴 다르네요😮24년 된 구축에 인테리어 디자이너의 재능을 쏟다"
+    },
+    {
+      "img": "https://image.ohou.se/i/bucketplace-v2-development/uploads/projects/cover_images/170999412329002737.jpg?w=1920&h=609&c=c",
+      "title": "온라인 집들이 5년 후, 얼마나 바뀌었을까?"
+    },
+    {
+      "img": "https://image.ohou.se/i/bucketplace-v2-development/uploads/cards/project/170158096424828043.jpg?w=1920&h=609&c=c",
+      "title": "누수? 이참에 바꾸자! 원목의 고급스러움이 묻어나는 집으로"
+    },
+    {
+      "img": "https://image.ohou.se/i/bucketplace-v2-development/uploads/cards/project/170062870033078982.jpg?w=1920&h=609&c=c",
+      "title": "버려지는 공간 하나 없이, 작은 미술관 같은 단독주택"
+    }
   ]
 }
