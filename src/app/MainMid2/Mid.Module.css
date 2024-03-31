@@ -4,3 +4,32 @@
 .Mid {
   max-height: 200px;
 }
+.ctitem {
+  height: 300px;
+  width: 100%;
+  display: flex;
+}
+
+.ctitem1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 500px;
+  height: 500px;
+}
+.Miditem {
+  height: 300px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.Midimg {
+  height: 200px;
+  width: 300px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
