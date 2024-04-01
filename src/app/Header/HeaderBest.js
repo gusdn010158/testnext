@@ -1,12 +1,16 @@
 // SlickUIComponent.js
 import React, { useState } from "react";
+import api from "@/services/api";
 import Slider from "react-slick";
 import { AiOutlineDown, AiOutlineUp } from "react-icons/ai";
 import styles from "../Header/head.module.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-const SlickUIComponent = ({ data }) => {
+const SlickUIComponent = () => {
+  const url = "http://localhost:3001/mainitem";
+
+  const data = api(url);
   const [toast, setToast] = useState(false);
 
   const onClick = () => {

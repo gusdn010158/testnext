@@ -1,61 +1,41 @@
 "use client";
 import React from "react";
-
-import Slickst from "./Slickst";
+import Slick from "@/libs/Slick";
 
 import api from "@/services/api";
 import styles from "../Store/store.module.css";
+import Storesmall from "./Storesmall";
+import StoreMain from "./StoreMain";
+import StoreMid from "./StoreMid";
 function page() {
-  const fristurl = "http://localhost:3001/store";
-  const secondurl = "http://localhost:3001/store2";
-  const smallurl = "http://localhost:3001/mainitem";
-  const friststoredata = api(fristurl);
-  const secondstoredata = api(secondurl);
-  const smalldata = api(smallurl);
+  const url = "http://localhost:3001/storeitem";
+
+  const data = api(url);
+
+  const settings = {
+    infinite: true,
+    speed: 1000, // 넘어가는 속도 (ms)
+    autoplay: true, // 자동 넘김 활성화
+    autoplaySpeed: 5000, // 자동 넘김 속도 (ms)
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: true,
+    pauseOnHover: true,
+  };
   return (
     <div className={styles.store}>
-      <Slickst />
+      <Slick settings={settings} slides={data} />
       <div className={styles.storein}>
-        <div className={styles.stitem}>
-          {smalldata.map((m) => (
-            <div className={styles.sti}>
-              <img className={styles.sticon} src={m.img} />
-              <div>{m.name}</div>
-            </div>
-          ))}
-        </div>
+        <Storesmall />
         <div>
           <div>
             <h3>오늘의 딜</h3>
             <div>더보기</div>
           </div>
-          <div className={styles.storeflex}>
-            {secondstoredata.map((m) => (
-              <div className={styles.storeitem}>
-                <div className={styles.storeimgtem}>
-                  <img className={styles.storeimg} src={m.img} />
-                </div>
-
-                <div>
-                  <div>{m.name}</div>
-                  <div>{m.text}</div>
-                  <div>{m.price}원</div>
-                  <div className={styles.emr}>특가</div>
-                  <div className={styles.gkf}>할인 쿠폰</div>
-                </div>
-              </div>
-            ))}
-          </div>
+          <StoreMid />
         </div>
         <h3>카테고리</h3>
-        <div className={styles.stitem}>
-          {smalldata.map((m) => (
-            <div className={styles.sti}>
-              <img className={styles.sticon} src={m.img} />
-              <div>{m.name}</div>
-            </div>
-          ))}
-        </div>
+        <Storesmall />
         <div className={styles.storein2}>
           <div className={styles.storein3}>
             <div>
@@ -65,22 +45,7 @@ function page() {
             <div>인기순</div>
           </div>
         </div>
-        <div className={styles.storeflex}>
-          {friststoredata.map((m) => (
-            <div className={styles.storeitem}>
-              <div className={styles.storeimgtem}>
-                <img className={styles.storeimg} src={m.img} />
-              </div>
-              <div>
-                <div>{m.name}</div>
-                <div>{m.text}</div>
-                <div>{m.price}원</div>
-                <div className={styles.emr}>특가</div>
-                <div className={styles.gkf}>할인 쿠폰</div>
-              </div>
-            </div>
-          ))}
-        </div>
+        <StoreMain />
       </div>
     </div>
   );

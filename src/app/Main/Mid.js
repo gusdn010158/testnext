@@ -1,4 +1,4 @@
-import styles from "./Mid.module.css";
+import styles from "../main.module.css";
 import React from "react";
 
 import api from "@/services/api";

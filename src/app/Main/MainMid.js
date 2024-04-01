@@ -1,9 +1,25 @@
 import React from "react";
 import styles from "../main.module.css";
 import Link from "next/link";
-import MidSlick from "./MidSlick";
+import api from "@/services/api";
+import "slick-carousel/slick/slick.css";
 
+import "slick-carousel/slick/slick-theme.css";
+
+import SlickComponent from "@/libs/Slick";
 export default function Slick() {
+  const url = "http://localhost:3001/ctitem";
+
+  const data = api(url);
+  var settings = {
+    arrows: true,
+
+    slidesToScroll: 4,
+    slidesToShow: 4,
+    speed: 500,
+
+    pauseOnHover: true,
+  };
   return (
     <div className={styles.mainct}>
       <div className={styles.mainctop}>
@@ -13,7 +29,7 @@ export default function Slick() {
         </div>
         <Link href="/">더보기</Link>
       </div>
-      <MidSlick />
+      <SlickComponent settings={settings} slides={data} />
     </div>
   );
 }
