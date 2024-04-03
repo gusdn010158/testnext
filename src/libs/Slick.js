@@ -8,13 +8,13 @@ const Slick = ({ settings, slides, sliderImgStyle }) => {
   return (
     <StyledSlider {...settings}>
       {slides.map((slide, index) => (
-        <div key={index}>
+        <Slidiv key={index}>
           <Sliderimg
             src={slide.images}
             alt={`Slide ${index}`}
             style={sliderImgStyle}
           />
-        </div>
+        </Slidiv>
       ))}
     </StyledSlider>
   );
@@ -43,6 +43,11 @@ const StyledSlider = styled(Slider)`
   .slick-next:before:hover {
     opacity: 1;
   }
+`;
+const Slidiv = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
 `;
 const Sliderimg = styled.img`
   border-radius: ${(props) => props.style?.borderRadius || "inherit"};

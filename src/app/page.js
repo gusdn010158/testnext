@@ -7,8 +7,8 @@ import MainMid from "./Main/MainMid";
 import Mid from "./Main/Mid";
 import Mainsmall from "./Main/Mainsmall";
 import SlickComponent from "@/libs/Slick";
-import styled from "styled-components";
 
+import Motion from "./Motion";
 const sliderImgStyle = {
   borderRadius: "5px",
   height: "510px",
@@ -21,11 +21,11 @@ export default function Home() {
 
   var settings = {
     arrows: true,
-
+    autoplay: true,
     slidesToScroll: 1,
     slidesToShow: 1,
     speed: 500,
-
+    autoplaySpeed: 2500,
     pauseOnHover: true,
   };
   return (
@@ -45,6 +45,8 @@ export default function Home() {
 
         <MainMid />
         <Mid />
+
+        <Motion />
       </div>
     </div>
   );
