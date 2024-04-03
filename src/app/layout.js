@@ -1,3 +1,4 @@
+import React from "react";
 import Headers from "@/app/Header/Headers";
 import "./globals.css";
 
@@ -11,10 +12,10 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body>
         <Headers />
-
         {children}
       </body>
     </html>
   );
 }
+
 //노출하고 노출하지않는 상태 store활용

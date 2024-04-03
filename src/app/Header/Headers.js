@@ -23,7 +23,7 @@ function Headers() {
         <div className={styles.header}>
           <div className={styles.headlogo}>
             <h2>
-              <Link className={styles.headLink} href="/">
+              <Link className={styles.headLink} href="/${router.locale}">
                 오늘의 집
               </Link>
             </h2>
