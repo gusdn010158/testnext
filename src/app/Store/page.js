@@ -11,7 +11,10 @@ function page() {
   const url = "http://localhost:3001/storeitem";
 
   const data = api(url);
-
+  const sliderImgStyle = {
+    height: "400px",
+    width: "100%",
+  };
   const settings = {
     infinite: true,
     speed: 1000, // 넘어가는 속도 (ms)
@@ -24,7 +27,11 @@ function page() {
   };
   return (
     <div className={styles.store}>
-      <Slick settings={settings} slides={data} />
+      <Slick
+        settings={settings}
+        slides={data}
+        sliderImgStyle={sliderImgStyle}
+      />
       <div className={styles.storein}>
         <Storesmall />
         <div>

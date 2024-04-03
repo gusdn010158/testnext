@@ -11,6 +11,13 @@ export default function Slick() {
   const url = "http://localhost:3001/ctitem";
 
   const data = api(url);
+
+  const sliderImgStyle = {
+    borderRadius: "25px",
+    height: "250px",
+    width: "70%",
+  };
+
   var settings = {
     arrows: true,
 
@@ -29,7 +36,11 @@ export default function Slick() {
         </div>
         <Link href="/">더보기</Link>
       </div>
-      <SlickComponent settings={settings} slides={data} />
+      <SlickComponent
+        settings={settings}
+        slides={data}
+        sliderImgStyle={sliderImgStyle}
+      />
     </div>
   );
 }

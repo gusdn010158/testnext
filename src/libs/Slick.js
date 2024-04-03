@@ -12,7 +12,7 @@ const Slick = ({ settings, slides, sliderImgStyle }) => {
           <Sliderimg
             src={slide.images}
             alt={`Slide ${index}`}
-            sliderImgStyle={sliderImgStyle}
+            style={sliderImgStyle}
           />
         </div>
       ))}
@@ -30,7 +30,7 @@ const StyledSlider = styled(Slider)`
   .slick-next {
     z-index: 1;
     right: 40px;
-    top: 180px;
+    top: 181px;
   }
 
   .slick-prev:before,
@@ -44,6 +44,10 @@ const StyledSlider = styled(Slider)`
     opacity: 1;
   }
 `;
-const Sliderimg = styled.img``;
+const Sliderimg = styled.img`
+  border-radius: ${(props) => props.style?.borderRadius || "inherit"};
+  height: ${(props) => props.style?.height || "auto"};
+  width: ${(props) => props.style?.width || "auto"};
+`;
 
 export default Slick;

@@ -8,15 +8,17 @@ import Mid from "./Main/Mid";
 import Mainsmall from "./Main/Mainsmall";
 import SlickComponent from "@/libs/Slick";
 import styled from "styled-components";
+
+const sliderImgStyle = {
+  borderRadius: "5px",
+  height: "510px",
+  width: "100%",
+};
+
 export default function Home() {
   const url = "http://localhost:3001/MainSide";
   const data = api(url);
 
-  const sliderStyle = {
-    borderRadius: "5px",
-    height: "510px",
-    width: "100%",
-  };
   var settings = {
     arrows: true,
 
@@ -35,7 +37,7 @@ export default function Home() {
             <SlickComponent
               settings={settings}
               slides={data}
-              sliderStyle={sliderStyle}
+              sliderImgStyle={sliderImgStyle}
             />
           </div>
         </div>
