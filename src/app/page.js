@@ -7,7 +7,7 @@ import MainMid from "./Main/MainMid";
 import Mid from "./Main/Mid";
 import Mainsmall from "./Main/Mainsmall";
 import SlickComponent from "@/libs/Slick";
-
+import Storesmall from "./Store/Storesmall";
 import Motion from "./Motion";
 const sliderImgStyle = {
   borderRadius: "5px",
@@ -46,8 +46,12 @@ export default function Home() {
         <MainMid />
         <Mid />
 
-        <Motion />
+        <Mid />
+        <Storesmall />
       </div>
     </div>
   );
+}
+{
+  /* <Motion /> */
 }

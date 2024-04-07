@@ -1,0 +1,31 @@
+.main {
+  display: Flex;
+  justify-content: center;
+  padding-top: 100px;
+  background-color: rgb(212, 212, 212);
+  height: 100vh;
+}
+.expert {
+  background-color: white;
+  width: 30%;
+  height: 60%;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.expert1 {
+  width: 90%;
+  height: 50px;
+  border: 1px solid rgb(192, 192, 192);
+  border-radius: 10px;
+}
+.button {
+  width: 90%;
+  height: 70px;
+  background-color: rgb(9, 127, 224);
+  border-radius: 10px;
+  border: none;
+  color: white;
+}
