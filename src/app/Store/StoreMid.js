@@ -15,7 +15,7 @@ function StoreMid() {
 
           <div>
             <div>{m.name}</div>
-            <div>{m.text}</div>
+            <div>{m.title}</div>
             <div>{m.price}원</div>
             <div className={styles.emr}>특가</div>
             <div className={styles.gkf}>할인 쿠폰</div>

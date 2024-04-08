@@ -13,16 +13,16 @@ export default function Slick() {
   const data = api(url);
 
   const sliderImgStyle = {
-    borderRadius: "25px",
+    borderRadius: "5px",
     height: "250px",
-    width: "70%",
+    width: "190px",
   };
 
   var settings = {
     arrows: true,
 
-    slidesToScroll: 4,
-    slidesToShow: 4,
+    slidesToScroll: 1,
+    slidesToShow: 6,
     speed: 500,
 
     pauseOnHover: true,

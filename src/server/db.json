@@ -51,9 +51,61 @@
       "img": "https://image.ohou.se/i/bucketplace-v2-development/uploads/shortcut/home_feed_shortcut_sets/167198021046015480.png?w=144"
     }
   ],
+  "mainitem2": [
+    {
+      "id": 1,
+      "name": "3",
+      "img": "https://image.ohou.se/i/bucketplace-v2-development/uploads/shortcut/home_feed_shortcut_sets/167198021046015480.png?w=144"
+    },
+    {
+      "id": 2,
+      "name": "5",
+      "img": "https://image.ohou.se/i/bucketplace-v2-development/uploads/shortcut/home_feed_shortcut_sets/167198007152582471.png?w=144"
+    },
+    {
+      "id": 3,
+      "name": "수5",
+      "img": "https://image.ohou.se/i/bucketplace-v2-development/uploads/shortcut/home_feed_shortcut_sets/169880736853477508.png?w=144"
+    },
+    {
+      "id": 4,
+      "name": "행88첵",
+      "img": "https://image.ohou.se/i/bucketplace-v2-development/uploads/shortcut/home_feed_shortcut_sets/170184318298899959.png?w=144"
+    },
+    {
+      "id": 5,
+      "name": "집들9이",
+      "img": "https://image.ohou.se/i/bucketplace-v2-development/uploads/shortcut/home_feed_shortcut_sets/167198007152582471.png?w=144"
+    },
+    {
+      "id": 6,
+      "name": "챌지참여",
+      "img": "https://image.ohou.se/i/bucketplace-v2-development/uploads/shortcut/home_feed_shortcut_sets/170736215082472666.png?w=144"
+    },
+    {
+      "id": 7,
+      "name": "장9기",
+      "img": "https://image.ohou.se/i/bucketplace-v2-development/uploads/shortcut/home_feed_shortcut_sets/170358029767805279.png?w=144"
+    },
+    {
+      "id": 8,
+      "name": "빠5배송",
+      "img": "https://image.ohou.se/i/bucketplace-v2-development/uploads/shortcut/home_feed_shortcut_sets/167198012024333402.png?w=144"
+    },
+    {
+      "id": 9,
+      "name": "리모7링",
+      "img": "https://image.ohou.se/i/bucketplace-v2-development/uploads/shortcut/home_feed_shortcut_sets/167198022841390557.png?w=144"
+    },
+    {
+      "id": 10,
+      "name": "쉬9이사",
+      "img": "https://image.ohou.se/i/bucketplace-v2-development/uploads/shortcut/home_feed_shortcut_sets/167198021046015480.png?w=144"
+    }
+  ],
   "ctitem": [
     {
-      "images": "https://image.ohou.se/i/bucketplace-v2-development/uploads/cards/snapshots/159877138003434906.jpeg?w=256&h=256&c=c"
+      "images": "https://image.ohou.se/i/bucketplace-v2-development/uploads/cards/snapshots/169396345621785215.jpeg?w=256&h=342&c=c"
     },
     {
       "images": "https://image.ohou.se/i/bucketplace-v2-development/uploads/cards/projects/1559140177706_rc2r.jpg?w=256&h=256&c=c"
@@ -173,25 +225,25 @@
     {
       "name": "헬로우 슬립",
       "img": "https://image.ohou.se/i/bucketplace-v2-development/uploads/productions/169821856938204382.jpg?gif=1&w=640&h=640&c=c&webp=1",
-      "text": "[10%쿠폰] NEW컬러 부드러운 카스테라 워싱 항균 옥수수솜간절기/사계절 차렵이불세트",
+      "title": "[10%쿠폰] NEW컬러 부드러운 카스테라 워싱 항균 옥수수솜간절기",
       "price": "35900"
     },
     {
       "name": "수면밀도",
       "img": "https://image.ohou.se/i/bucketplace-v2-development/uploads/productions/169657816330556788.jpg?gif=1&w=640&h=640&c=c&webp=1",
-      "text": "[오늘의딜] 허리 디스크 환자가 만든 코어 릴랙스 매트리스 S,SS,Q,K",
+      "title": "[오늘의딜] 허리 디스크 환자가 만든 코어 릴랙스 매트리스 S,SS,Q,K",
       "price": "299,000"
     },
     {
       "name": "한샘",
       "img": "https://image.ohou.se/i/bucketplace-v2-development/uploads/productions/165959279812235613.jpg?gif=1&w=640&h=640&c=c&webp=1",
-      "text": "한샘몰pick 눕 데일리 구스 아쿠아텍스 패브릭 모듈 소파 4인용3colors",
+      "title": "한샘몰pick 눕 데일리 구스 아쿠아텍스 패브릭 모듈 소파 4인용3colors",
       "price": "724,900"
     },
     {
       "name": "웰퍼니쳐",
       "img": "https://prs.ohou.se/apne2/any/uploads/productions/v1-189531249586240.jpg?gif=1&w=640&h=640&c=c&webp=1",
-      "text": "[쿠폰+무료내림]허리엔 더매직 허리특화 포켓스프링 매트리스 S/SS/Q/K/SK",
+      "title": "[쿠폰+무료내림]허리엔 더매직 허리특화 포켓스프링 매트리스 S/SS/Q/K/SK",
       "price": "229,000"
     }
   ],
@@ -213,7 +265,20 @@
       "title": "버려지는 공간 하나 없이, 작은 미술관 같은 단독주택"
     }
   ],
-
+  "dlsxpdlfj": [
+    {
+      "img": "https://image.ohou.se/i/bucketplace-v2-development/uploads/cards/expert_reviews/170588082462464511.jpg?w=1280&q=80&webp=1",
+      "title": "예나디자인결혼하고 첫집에서 다음집으로 이사를 계획하면서 매매를 하게되었고 평소 SNS에서만 보던 내가 구상한 나의오늘의집에 인테리어 금액자체가  "
+    },
+    {
+      "img": "https://image.ohou.se/i/bucketplace-v2-development/uploads/cards/expert_reviews/170847788288990712.jpg?w=1280&q=80&webp=1",
+      "title": "홈 루덴스처음 상담부터 꼼꼼하고 친절하셨어요, 제가 2베이 아파트에서 냉장고에 김치냉장고까지 있는 상황에서 넓은 테리어 팀장"
+    },
+    {
+      "img": "https://image.ohou.se/i/bucketplace-v2-development/uploads/cards/expert_reviews/170688711793777188.JPG?w=360&q=80&webp=1",
+      "title": "가우디 디자인인터넷에서 보고 계약 한 업체가 처음 계약과 다르게 자꾸 이런 저런 핑계로 금액을 많이 올려서 계약을 중도 해지하고, 오늘의 집을 통이 정"
+    }
+  ],
   "MainSide": [
     {
       "images": "https://image.ohou.se/i/bucketplace-v2-development/uploads/banners/home_banner/171047806781131161.png?w=360"
