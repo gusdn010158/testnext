@@ -1,12 +1,14 @@
 import React from "react";
 import api from "@/services/api";
 import styles from "../Store/store.module.css";
-function Storesmall() {
+function Storesmall({ first, last }) {
   const smallurl = "http://localhost:3001/mainitem";
   const smalldata = api(smallurl);
+
+  const slicedData = smalldata.slice(first - 1, last);
   return (
     <div className={styles.stitem}>
-      {smalldata.map((m) => (
+      {slicedData.map((m) => (
         <div className={styles.sti}>
           <img className={styles.sticon} src={m.img} />
           <div>{m.name}</div>

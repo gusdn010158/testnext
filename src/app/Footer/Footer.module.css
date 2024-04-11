@@ -1,0 +1,26 @@
+.foot {
+  background-color: gray;
+  width: 1100px;
+  height: 500px;
+  display: Flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 400px 20px 400px;
+}
+.footin {
+  min-width: 300px;
+  height: 100%;
+}
+.footin2 {
+  border-right: 1px solid white;
+  border-left: 1px solid white;
+  display: flex;
+
+  justify-content: space-around;
+  flex-wrap: wrap;
+  min-width: 300px;
+  height: 100%;
+}
+.footin2 > div {
+  width: 150px;
+}

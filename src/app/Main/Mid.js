@@ -1,12 +1,21 @@
 import styles from "../main.module.css";
 import React from "react";
+import api from "@/services/api";
+function Mid({ last, first }) {
+  const storeurl = "http://localhost:3001/store";
 
-function Mid({ img, title }) {
+  const datastore = api(storeurl);
+  const data = datastore.slice(first - 1, last);
+
   return (
-    <div className={styles.Miditem}>
-      <img className={styles.Midimg} alt="12" src={img} />
-      <div>{title}</div>
-    </div>
+    <>
+      {data.map((item) => (
+        <div className={styles.Miditem}>
+          <img className={styles.Midimg} alt="12" src={item.img} />
+          <div>{item.title}</div>
+        </div>
+      ))}
+    </>
   );
 }
 

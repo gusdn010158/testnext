@@ -6,7 +6,7 @@ import api from "@/services/api";
 import styles from "../Store/store.module.css";
 import Storesmall from "./Storesmall";
 import StoreMain from "./StoreMain";
-import StoreMid from "./StoreMid";
+
 function page() {
   const url = "http://localhost:3001/storeitem";
 
@@ -33,16 +33,16 @@ function page() {
         sliderImgStyle={sliderImgStyle}
       />
       <div className={styles.storein}>
-        <Storesmall />
+        <Storesmall first={1} last={10} />
         <div>
           <div>
             <h3>오늘의 딜</h3>
             <div>더보기</div>
           </div>
-          <StoreMid />
+          <StoreMain first={1} last={4} />
         </div>
         <h3>카테고리</h3>
-        <Storesmall />
+        <Storesmall first={11} last={20} />
         <div className={styles.storein2}>
           <div className={styles.storein3}>
             <div>
@@ -52,7 +52,7 @@ function page() {
             <div>인기순</div>
           </div>
         </div>
-        <StoreMain />
+        <StoreMain first={1} last={18} />
       </div>
     </div>
   );

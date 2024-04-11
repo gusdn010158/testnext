@@ -7,34 +7,17 @@ import MainMid from "./Main/MainMid";
 import Mid from "./Main/Mid";
 import Mainsmall from "./Main/Mainsmall";
 import SlickComponent from "@/libs/Slick";
-import StoreMid from "./Store/StoreMid";
+import StoreMain from "./Store/StoreMain";
 
 const sliderImgStyle = {
   borderRadius: "5px",
   height: "510px",
   width: "100%",
 };
-
 export default function Home() {
   const url = "http://localhost:3001/MainSide";
   const data = api(url);
-  const twourl = "http://localhost:3001/MidTwo";
 
-  const datatwo = api(twourl);
-
-  const storeurl = "http://localhost:3001/store2";
-
-  const datastore = api(storeurl);
-  const itemurl = "http://localhost:3001/mainitem";
-  // API 호출
-  const iu = api(itemurl);
-  const itemurl2 = "http://localhost:3001/mainitem2";
-  // API 호출
-  const iu2 = api(itemurl2);
-
-  const dlsxpdlfj = "http://localhost:3001/dlsxpdlfj";
-  // API 호출
-  const dddd = api(dlsxpdlfj);
   var settings = {
     arrows: true,
     autoplay: true,
@@ -58,9 +41,7 @@ export default function Home() {
           </div>
         </div>
         <div className={styles.mainitem}>
-          {iu.map((m) => (
-            <Mainsmall img={m.img} name={m.name} />
-          ))}
+          <Mainsmall first={1} last={10} />
         </div>
         <MainMid />
 
@@ -70,9 +51,7 @@ export default function Home() {
             <div>더보기</div>
           </div>
           <div className={styles.ctitem}>
-            {datatwo.map((item) => (
-              <Mid img={item.img} title={item.title} />
-            ))}
+            <Mid first={19} last={22} />
           </div>
 
           <div className={styles.Midtop}>
@@ -80,33 +59,27 @@ export default function Home() {
             <div>더보기</div>
           </div>
           <div className={styles.ctitem}>
-            {datastore.map((item) => (
-              <Mid img={item.img} title={item.title} />
-            ))}
+            <Mid first={19} last={22} />
           </div>
           <div className={styles.Midtop}>
             <h3>카테고리별 상품 찾기</h3>
             <div></div>
           </div>
           <div className={styles.mainitem}>
-            {iu2.map((m) => (
-              <Mainsmall img={m.img} name={m.name} />
-            ))}
+            <Mainsmall first={11} last={20} />
           </div>
           <div className={styles.Midtop}>
             <h3>오늘의딜</h3>
             <div>더보기</div>
           </div>
-          <StoreMid />
+          <StoreMain first={1} last={4} />
 
           <div className={styles.Midtop}>
             <h3>유저들의 인테리어 시공 리뷰</h3>
             <div>더보기</div>
           </div>
           <div className={styles.ctitem}>
-            {dddd.map((item) => (
-              <Mid img={item.img} title={item.title} />
-            ))}
+            <Mid first={23} last={25} />
           </div>
         </div>
       </div>
