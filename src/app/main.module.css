@@ -1,6 +1,6 @@
 .main {
   width: 100%;
-  height: 5000px;
+
   display: flex;
   justify-content: center;
 }
@@ -75,9 +75,7 @@
   align-items: center;
   justify-content: space-between;
 }
-.Mid {
-  height: 5000px;
-}
+
 .ctitem {
   height: 300px;
   width: 100%;
@@ -114,4 +112,19 @@
   width: 200px;
   height: 200px;
   background-color: brown;
+}
+.cticon {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+
+  height: 100%;
+}
+.cicon {
+  background-color: rgb(202, 202, 202);
+  border-radius: 50px;
+  width: 40px;
+  height: 40px;
 }

@@ -1,7 +1,7 @@
 import React from "react";
 import api from "@/services/api";
 import styles from "../Store/store.module.css";
-function StoreMain({ first, last }) {
+function StoreMain({ first, last, itemWidth }) {
   const fristurl = "http://localhost:3001/store";
   const friststoredata = api(fristurl);
 
@@ -10,7 +10,7 @@ function StoreMain({ first, last }) {
   return (
     <div className={styles.storeflex}>
       {store.map((m) => (
-        <div className={styles.storeitem}>
+        <div className={styles.storeitem} style={{ width: itemWidth }}>
           <div className={styles.storeimgtem}>
             <img className={styles.storeimg} src={m.img} />
           </div>
