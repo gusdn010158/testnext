@@ -42,18 +42,11 @@
   background-repeat: no-repeat;
   background-position: center;
 }
+
 .mainitem {
-  margin-top: 20px;
-  height: 120px;
-  margin-top: 50px;
-  margin-bottom: 50px;
+  height: 100px;
   width: 100%;
-  display: flex;
-
-  justify-content: center;
-  align-items: center;
 }
-
 .mainitem1 {
   width: 100%;
   display: Flex;

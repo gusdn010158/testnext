@@ -11,7 +11,7 @@ function StoreMain({ first, last, itemWidth }) {
     <div className={styles.storeflex}>
       {store.map((m) => (
         <div className={styles.storeitem} style={{ width: itemWidth }}>
-          <div className={styles.storeimgtem}>
+          <div className={styles.storeimgitem}>
             <img className={styles.storeimg} src={m.img} />
           </div>
           <div>

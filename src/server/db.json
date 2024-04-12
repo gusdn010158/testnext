@@ -99,50 +99,130 @@
       "id": 20,
       "name": "쉬9이사",
       "img": "https://image.ohou.se/i/bucketplace-v2-development/uploads/shortcut/home_feed_shortcut_sets/167198021046015480.png?w=144"
+    },
+    {
+      "id": 21,
+      "name": "가구",
+      "img": "https://image.ohou.se/i/bucketplace-v2-development/uploads/category/store_home_categories/165698403420736265.png?gif=1&w=144&h=144&c=c&webp=1"
+    },
+    {
+      "id": 22,
+      "name": "패브릭",
+      "img": "https://image.ohou.se/i/bucketplace-v2-development/uploads/category/store_home_categories/171049146521642460.png?gif=1&w=144&h=144&c=c&webp=1"
+    },
+    {
+      "id": 23,
+      "name": "주방용품",
+      "img": "https://image.ohou.se/i/bucketplace-v2-development/uploads/category/store_home_categories/165443714334272236.png?gif=1&w=144&h=144&c=c&webp=1"
+    },
+    {
+      "id": 24,
+      "name": "가전 디지털",
+      "img": "https://image.ohou.se/i/bucketplace-v2-development/uploads/category/store_home_categories/169258215285574092.png?gif=1&w=144&h=144&c=c&webp=1"
+    },
+    {
+      "id": 25,
+      "name": "식품",
+      "img": "https://image.ohou.se/i/bucketplace-v2-development/uploads/category/store_home_categories/166727583625644946.png?gif=1&w=144&h=144&c=c&webp=1"
+    },
+    {
+      "id": 26,
+      "name": "데코 식물",
+      "img": "https://image.ohou.se/i/bucketplace-v2-development/uploads/category/store_home_categories/167167019685810067.png?gif=1&w=144&h=144&c=c&webp=1"
+    },
+    {
+      "id": 27,
+      "name": "조명",
+      "img": "https://image.ohou.se/i/bucketplace-v2-development/uploads/category/store_home_categories/171127972638175198.png?gif=1&w=144&h=144&c=c&webp=1"
+    },
+    {
+      "id": 28,
+      "name": "수납정리",
+      "img": "https://image.ohou.se/i/bucketplace-v2-development/uploads/category/store_home_categories/165443714917341657.png?gif=1&w=144&h=144&c=c&webp=1"
+    },
+    {
+      "id": 29,
+      "name": "생활용품",
+      "img": "https://image.ohou.se/i/bucketplace-v2-development/uploads/category/store_home_categories/165519431107541334.png?gif=1&w=144&h=144&c=c&webp=1"
+    },
+    {
+      "id": 30,
+      "name": "생필품",
+      "img": "https://image.ohou.se/i/bucketplace-v2-development/uploads/category/store_home_categories/165579048228622395.png?gif=1&w=144&h=144&c=c&webp=1"
+    },
+    {
+      "id": 31,
+      "name": "유아아동",
+      "img": "https://image.ohou.se/i/bucketplace-v2-development/uploads/category/store_home_categories/166598560990637620.png?gif=1&w=144&h=144&c=c&webp=1"
+    },
+    {
+      "id": 32,
+      "name": "반려동물",
+      "img": "https://image.ohou.se/i/bucketplace-v2-development/uploads/category/store_home_categories/170529503435877992.png?gif=1&w=144&h=144&c=c&webp=1"
+    },
+    {
+      "id": 33,
+      "name": "캠핑레저",
+      "img": "https://image.ohou.se/i/bucketplace-v2-development/uploads/category/store_home_categories/171194745341441910.png?gif=1&w=144&h=144&c=c&webp=1"
+    },
+    {
+      "id": 34,
+      "name": "공구",
+      "img": "https://image.ohou.se/i/bucketplace-v2-development/uploads/category/store_home_categories/162823230480918647.png?gif=1&w=144&h=144&c=c&webp=1"
+    },
+    {
+      "id": 35,
+      "name": "인테리어시공",
+      "img": "https://image.ohou.se/i/bucketplace-v2-development/uploads/category/store_home_categories/162823230908544036.png?gif=1&w=144&h=144&c=c&webp=1"
+    },
+    {
+      "id": 36,
+      "name": "렌탈",
+      "img": "https://image.ohou.se/i/bucketplace-v2-development/uploads/category/store_home_categories/166597743167902408.png?gif=1&w=144&h=144&c=c&webp=1"
     }
   ],
 
   "ctitem": [
     {
-      "images": "https://image.ohou.se/i/bucketplace-v2-development/uploads/cards/snapshots/169396345621785215.jpeg?w=256&h=342&c=c"
+      "img": "https://image.ohou.se/i/bucketplace-v2-development/uploads/cards/snapshots/169396345621785215.jpeg?w=256&h=342&c=c"
     },
     {
-      "images": "https://image.ohou.se/i/bucketplace-v2-development/uploads/cards/projects/1559140177706_rc2r.jpg?w=256&h=256&c=c"
+      "img": "https://image.ohou.se/i/bucketplace-v2-development/uploads/cards/projects/1559140177706_rc2r.jpg?w=256&h=256&c=c"
     },
     {
-      "images": "https://image.ohou.se/i/bucketplace-v2-development/uploads/cards/snapshots1558884619_ImtRCyiZ.jpeg?w=256&h=256&c=c"
+      "img": "https://image.ohou.se/i/bucketplace-v2-development/uploads/cards/snapshots1558884619_ImtRCyiZ.jpeg?w=256&h=256&c=c"
     },
     {
-      "images": "https://image.ohou.se/i/bucketplace-v2-development/uploads/cards/snapshots/166901982809189373.jpeg?w=256&h=256&c=c"
+      "img": "https://image.ohou.se/i/bucketplace-v2-development/uploads/cards/snapshots/166901982809189373.jpeg?w=256&h=256&c=c"
     },
     {
-      "images": "https://image.ohou.se/i/bucketplace-v2-development/uploads/cards/snapshots/166700980073758874.jpeg?w=256&h=256&c=c"
+      "img": "https://image.ohou.se/i/bucketplace-v2-development/uploads/cards/snapshots/166700980073758874.jpeg?w=256&h=256&c=c"
     },
     {
-      "images": "https://image.ohou.se/i/bucketplace-v2-development/uploads/cards/snapshots/164933651677042251.jpeg?w=256&h=256&c=c"
+      "img": "https://image.ohou.se/i/bucketplace-v2-development/uploads/cards/snapshots/164933651677042251.jpeg?w=256&h=256&c=c"
     }
   ],
   "storeitem": [
     {
-      "images": "https://image.ohou.se/i/bucketplace-v2-development/uploads/store/banners/store_home_banners/171048683315201597.png?w=1920"
+      "img": "https://image.ohou.se/i/bucketplace-v2-development/uploads/store/banners/store_home_banners/171048683315201597.png?w=1920"
     },
     {
-      "images": "https://image.ohou.se/i/bucketplace-v2-development/uploads/store/banners/store_home_banners/171074212498282781.png?w=1920"
+      "img": "https://image.ohou.se/i/bucketplace-v2-development/uploads/store/banners/store_home_banners/171074212498282781.png?w=1920"
     },
     {
-      "images": "https://image.ohou.se/i/bucketplace-v2-development/uploads/store/banners/store_home_banners/171048723979218063.png?w=1920"
+      "img": "https://image.ohou.se/i/bucketplace-v2-development/uploads/store/banners/store_home_banners/171048723979218063.png?w=1920"
     },
     {
-      "images": "https://image.ohou.se/i/bucketplace-v2-development/uploads/store/banners/store_home_banners/171048733582190540.png?w=1920"
+      "img": "https://image.ohou.se/i/bucketplace-v2-development/uploads/store/banners/store_home_banners/171048733582190540.png?w=1920"
     },
     {
-      "images": "https://image.ohou.se/i/bucketplace-v2-development/uploads/store/banners/store_home_banners/171048488772568431.png?w=1920"
+      "img": "https://image.ohou.se/i/bucketplace-v2-development/uploads/store/banners/store_home_banners/171048488772568431.png?w=1920"
     },
     {
-      "images": "https://image.ohou.se/i/bucketplace-v2-development/uploads/store/banners/store_home_banners/171089715562887826.jpg?w=1920"
+      "img": "https://image.ohou.se/i/bucketplace-v2-development/uploads/store/banners/store_home_banners/171089715562887826.jpg?w=1920"
     },
     {
-      "images": "https://image.ohou.se/i/bucketplace-v2-development/uploads/store/banners/store_home_banners/171100688655755528.png?w=1920"
+      "img": "https://image.ohou.se/i/bucketplace-v2-development/uploads/store/banners/store_home_banners/171100688655755528.png?w=1920"
     }
   ],
   "store": [
@@ -314,16 +394,16 @@
 
   "MainSide": [
     {
-      "images": "https://image.ohou.se/i/bucketplace-v2-development/uploads/banners/home_banner/171047806781131161.png?w=360"
+      "img": "https://image.ohou.se/i/bucketplace-v2-development/uploads/banners/home_banner/171047806781131161.png?w=360"
     },
     {
-      "images": "https://image.ohou.se/i/bucketplace-v2-development/uploads/banners/home_banner/171169973270255325.png?w=360"
+      "img": "https://image.ohou.se/i/bucketplace-v2-development/uploads/banners/home_banner/171169973270255325.png?w=360"
     },
     {
-      "images": "https://image.ohou.se/i/bucketplace-v2-development/uploads/banners/home_banner/171169989635207757.png?w=360"
+      "img": "https://image.ohou.se/i/bucketplace-v2-development/uploads/banners/home_banner/171169989635207757.png?w=360"
     },
     {
-      "images": "https://image.ohou.se/i/bucketplace-v2-development/uploads/banners/home_banner/171169995555675511.png?w=360"
+      "img": "https://image.ohou.se/i/bucketplace-v2-development/uploads/banners/home_banner/171169995555675511.png?w=360"
     }
   ]
 }

@@ -5,7 +5,7 @@ import React from "react";
 import api from "@/services/api";
 import { AiOutlineArrowRight } from "react-icons/ai";
 import Mid from "./Main/Mid";
-import Mainsmall from "./Main/Mainsmall";
+import Storesmall from "./Store/Storesmall";
 import SlickComponent from "@/libs/Slick";
 import StoreMain from "./Store/StoreMain";
 
@@ -47,6 +47,24 @@ export default function Home() {
     pauseOnHover: true,
   };
 
+  const url2 = "http://localhost:3001/mainitem";
+
+  const data2 = api(url2);
+
+  const set = {
+    infinite: true,
+    speed: 1000, // 넘어가는 속도 (ms)
+    autoplay: true, // 자동 넘김 활성화
+    autoplaySpeed: 5000, // 자동 넘김 속도 (ms)
+    slidesToShow: 10,
+    slidesToScroll: 5,
+    arrows: true,
+    pauseOnHover: true,
+  };
+  const setImgStyle = {
+    height: "70px",
+    width: "70px",
+  };
   return (
     <div className={styles.main}>
       <div className={styles.maincom}>
@@ -61,7 +79,7 @@ export default function Home() {
           </div>
         </div>
         <div className={styles.mainitem}>
-          <Mainsmall first={1} last={10} />
+          <Storesmall first={1} last={10} itemWidth="70px" itemHeight="60px" />
         </div>
         <div className={styles.mainct}>
           <div className={styles.mainctop}>
@@ -99,7 +117,11 @@ export default function Home() {
             <div></div>
           </div>
           <div className={styles.mainitem}>
-            <Mainsmall first={11} last={20} />
+            <SlickComponent
+              settings={set}
+              slides={data2}
+              sliderImgStyle={setImgStyle}
+            />
           </div>
           <div className={styles.Midtop}>
             <h3>오늘의딜</h3>

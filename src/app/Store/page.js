@@ -11,6 +11,10 @@ function page() {
   const url = "http://localhost:3001/storeitem";
 
   const data = api(url);
+
+  const url2 = "http://localhost:3001/mainitem";
+
+  const data2 = api(url2);
   const sliderImgStyle = {
     height: "400px",
     width: "100%",
@@ -25,6 +29,20 @@ function page() {
     arrows: true,
     pauseOnHover: true,
   };
+  const set = {
+    infinite: true,
+    speed: 1000, // 넘어가는 속도 (ms)
+    autoplay: true, // 자동 넘김 활성화
+    autoplaySpeed: 5000, // 자동 넘김 속도 (ms)
+    slidesToShow: 10,
+    slidesToScroll: 5,
+    arrows: true,
+    pauseOnHover: true,
+  };
+  const setImgStyle = {
+    height: "70px",
+    width: "70px",
+  };
   return (
     <div className={styles.store}>
       <Slick
@@ -32,6 +50,7 @@ function page() {
         slides={data}
         sliderImgStyle={sliderImgStyle}
       />
+
       <div className={styles.storein}>
         <Storesmall first={1} last={10} />
         <div>
@@ -39,10 +58,13 @@ function page() {
             <h3>오늘의 딜</h3>
             <div>더보기</div>
           </div>
-          <StoreMain first={1} last={4} />
+          <div className={styles.storein2}>
+            <StoreMain first={1} last={4} />
+          </div>
         </div>
-        <h3>카테고리</h3>
-        <Storesmall first={11} last={20} />
+        <div className={styles.slickst}>
+          <Slick settings={set} slides={data2} sliderImgStyle={setImgStyle} />
+        </div>
         <div className={styles.storein2}>
           <div className={styles.storein3}>
             <div>
@@ -52,7 +74,9 @@ function page() {
             <div>인기순</div>
           </div>
         </div>
-        <StoreMain first={1} last={18} />
+        <div className={styles.storein2}>
+          <StoreMain first={1} last={18} />
+        </div>
       </div>
     </div>
   );
