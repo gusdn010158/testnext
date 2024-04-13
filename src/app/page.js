@@ -8,12 +8,8 @@ import Mid from "./Main/Mid";
 import Storesmall from "./Store/Storesmall";
 import SlickComponent from "@/libs/Slick";
 import StoreMain from "./Store/StoreMain";
+import Titleslick from "./Titleslick";
 
-const sliderImgStyle = {
-  borderRadius: "5px",
-  height: "510px",
-  width: "100%",
-};
 export default function Home() {
   const url = "http://localhost:3001/MainSide";
   const data = api(url);
@@ -26,6 +22,11 @@ export default function Home() {
     speed: 500,
     autoplaySpeed: 2500,
     pauseOnHover: true,
+  };
+  const sliderImgStyle = {
+    borderRadius: "5px",
+    height: "510px",
+    width: "100%",
   };
   const cturl = "http://localhost:3001/ctitem";
 
@@ -152,7 +153,8 @@ export default function Home() {
             <h3>베스트</h3>
             <div>더보기</div>
           </div>
-          <StoreMain first={1} last={3} itemWidth="31%" />
+          <Titleslick />
+          <StoreMain first={7} last={9} itemWidth="31%" />
         </div>
       </div>
     </div>
