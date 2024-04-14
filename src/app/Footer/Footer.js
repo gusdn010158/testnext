@@ -4,13 +4,15 @@ function Footer(props) {
   return (
     <div className={styles.foot}>
       <div className={styles.footin}>
-        <div>고객센터</div>
-        <ui>1670-0876 09:00 ~ 18:00</ui>
+        <h3>고객센터</h3>
+        <h3>1670-0876 09:00 ~ 18:00</h3>
         <li>평일: 전체 문의 상담 </li>
         <li>토요일, 공휴일: 오늘의집 직접배송, 이사/시공/제품설치 문의 상담</li>
         <li>일요일: 휴무</li>
-        <button>카톡 상담(평일 09:00~18:00)</button>
-        <button>이메일 문의</button>
+        <div className={styles.footbutton}>
+          <button>카톡 상담(평일 09:00~18:00)</button>
+          <button>이메일 문의</button>
+        </div>
       </div>
       <div className={styles.footin2}>
         <div>회사소개</div>
@@ -26,7 +28,7 @@ function Footer(props) {
         <div>상품광고 소개</div>
         <div>고객의 소리</div>
       </div>
-      <div className={styles.footin}>
+      <div className={styles.footin3}>
         <div>
           (주)버킷플레이스|대표이사 이승재|서울 서초구 서초대로74길 4
           삼성생명서초타워 25층, 27층|contact@bucketplace.net|사업자등록번호
@@ -44,6 +46,7 @@ function Footer(props) {
           부담합니다. Copyright 2014. bucketplace, Co., Ltd. All rights
           reserved.
         </div>
+        <div>Copyright 2014. bucketplace, Co., Ltd. All rights reserved.</div>
       </div>
     </div>
   );

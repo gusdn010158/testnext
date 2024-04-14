@@ -12,7 +12,7 @@ function Mid({ last, first }) {
       {data.map((item) => (
         <div className={styles.Miditem}>
           <img className={styles.Midimg} alt="12" src={item.img} />
-          <div>{item.title}</div>
+          <div className={styles.Midtitle}>{item.title}</div>
         </div>
       ))}
     </>

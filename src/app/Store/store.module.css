@@ -1,12 +1,30 @@
 .store {
   width: 100%;
 }
+.Midtop {
+  width: 1300px;
+  height: 70px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.Midtop > a {
+  color: rgb(76, 181, 223);
+  text-decoration: none;
+  font-weight: 900;
+}
 .storein {
   width: 100%;
   display: Flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
+}
+.storein1 {
+  width: 1200px;
+  display: Flex;
+  flex-direction: column;
 }
 .storein2 {
   width: 1300px;
@@ -23,13 +41,14 @@
 .storeflex {
   display: flex;
   flex-wrap: wrap;
+  margin-top: 30px;
   width: 100%;
+  height: 100%;
 }
 
 .storeitem {
-  margin: 12px;
-  width: 300px;
-  height: 470px;
+  width: 25%;
+  height: 450px;
   display: flex;
   flex-direction: column;
 }
@@ -37,8 +56,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 270px;
-  height: 270px;
+  width: 90%;
+  height: 90%;
 }
 .storeimgitem:hover {
   background-color: rgb(255, 255, 255);
@@ -50,13 +69,20 @@
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: inherit;
-  width: 270px;
-  height: 270px;
+  width: 100%;
+  height: 100%;
 }
 .storeimg:hover {
-  width: 290px;
-  height: 290px;
+  width: 395px;
+  height: 395px;
   background-color: rgb(255, 255, 255);
+}
+.storetitle {
+  height: 35%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around;
 }
 
 .sticon {
@@ -97,4 +123,5 @@
 .slickst {
   height: 150px;
   width: 1300px;
+  margin-bottom: 30px;
 }

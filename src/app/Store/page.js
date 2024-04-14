@@ -6,7 +6,7 @@ import api from "@/services/api";
 import styles from "../Store/store.module.css";
 import Storesmall from "./Storesmall";
 import StoreMain from "./StoreMain";
-
+import Link from "next/link";
 function page() {
   const url = "http://localhost:3001/storeitem";
 
@@ -52,26 +52,35 @@ function page() {
       />
 
       <div className={styles.storein}>
-        <Storesmall first={1} last={10} />
+        <div className={styles.storein1}>
+          <Storesmall first={1} last={10} />
+        </div>
         <div>
-          <div>
-            <h3>오늘의 딜</h3>
-            <div>더보기</div>
+          <div className={styles.Midtop}>
+            <div>
+              <h3>오늘의 딜</h3>
+            </div>
+            <Link href="/">더보기</Link>
           </div>
           <div className={styles.storein2}>
             <StoreMain first={1} last={4} />
           </div>
         </div>
         <div className={styles.slickst}>
+          <div className={styles.Midtop}>
+            <div>
+              <h3>카테고리</h3>
+            </div>
+          </div>
           <Slick settings={set} slides={data2} sliderImgStyle={setImgStyle} />
         </div>
         <div className={styles.storein2}>
-          <div className={styles.storein3}>
+          <div className={styles.Midtop}>
             <div>
-              <h3>인기상품</h3>
+              <h3>인기 상품</h3>
               <div>배송</div>
             </div>
-            <div>인기순</div>
+            <Link href="/">인기순</Link>
           </div>
         </div>
         <div className={styles.storein2}>

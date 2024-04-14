@@ -35,7 +35,7 @@ export default function Home() {
   const ctsliderImgStyle = {
     borderRadius: "5px",
     height: "250px",
-    width: "190px",
+    width: "195px",
   };
 
   var sett = {
@@ -83,9 +83,9 @@ export default function Home() {
           <Storesmall first={1} last={10} itemWidth="70px" itemHeight="60px" />
         </div>
         <div className={styles.mainct}>
-          <div className={styles.mainctop}>
+          <div className={styles.Midtop}>
             <div>
-              <h4>이런 사진을 찾고 있나요?</h4>
+              <h3>이런 사진을 찾고 있나요?</h3>
               <div>좋아하실 만한 인테리어 콘텐츠를 추천해드려요</div>
             </div>
             <Link href="/">더보기</Link>
@@ -100,7 +100,7 @@ export default function Home() {
         <div className={styles.Mid}>
           <div className={styles.Midtop}>
             <h3>40평대 맞나요? 정말 잘 꾸몄어요😮</h3>
-            <div>더보기</div>
+            <Link href="/">더보기</Link>
           </div>
           <div className={styles.ctitem}>
             <Mid first={19} last={22} />
@@ -108,7 +108,7 @@ export default function Home() {
 
           <div className={styles.Midtop}>
             <h3>봄이 왔어요🌸 베란다 개방 시작!</h3>
-            <div>더보기</div>
+            <Link href="/">더보기</Link>
           </div>
           <div className={styles.ctitem}>
             <Mid first={19} last={22} />
@@ -126,13 +126,13 @@ export default function Home() {
           </div>
           <div className={styles.Midtop}>
             <h3>오늘의딜</h3>
-            <div>더보기</div>
+            <Link href="/">더보기</Link>
           </div>
           <StoreMain first={1} last={4} />
 
           <div className={styles.Midtop}>
             <h3>유저들의 인테리어 시공 리뷰</h3>
-            <div>더보기</div>
+            <Link href="/">더보기</Link>
           </div>
           <div className={styles.ctitem}>
             <Mid first={23} last={25} />
@@ -140,21 +140,21 @@ export default function Home() {
 
           <div className={styles.Midtop}>
             <h3>오늘의 기획전</h3>
-            <div>더보기</div>
+            <Link href="/">더보기</Link>
           </div>
           <div className={styles.ctitem}>
             <Mid first={11} last={13} />
             <div className={styles.cticon}>
               <AiOutlineArrowRight className={styles.cicon} />
-              <div>더보기</div>
+              <Link href="/">더보기</Link>
             </div>
           </div>
           <div className={styles.Midtop}>
             <h3>베스트</h3>
-            <div>더보기</div>
+            <Link href="/">더보기</Link>
           </div>
           <Titleslick />
-          <StoreMain first={7} last={9} itemWidth="31%" />
+          <StoreMain first={7} last={9} />
         </div>
       </div>
     </div>

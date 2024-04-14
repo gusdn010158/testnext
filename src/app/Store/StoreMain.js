@@ -14,7 +14,7 @@ function StoreMain({ first, last, itemWidth }) {
           <div className={styles.storeimgitem}>
             <img className={styles.storeimg} src={m.img} />
           </div>
-          <div>
+          <div className={styles.storetitle}>
             <div>{m.name}</div>
             <div>{m.text}</div>
             <div>{m.price}원</div>

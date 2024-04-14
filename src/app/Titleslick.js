@@ -12,28 +12,38 @@ function Titleslick() {
   const datastore = api(storeurl);
   var settings = {
     arrows: true,
-    autoplay: true,
+
     slidesToScroll: 5,
-    slidesToShow: 10,
+    slidesToShow: 12,
     speed: 500,
-    autoplaySpeed: 2500,
+
     pauseOnHover: true,
   };
   return (
     <StyledSlider {...settings}>
       {datastore.map((item) => (
-        <Sdiv>{item.name}</Sdiv>
+        <S>
+          <Sdiv>{item.name}</Sdiv>
+        </S>
       ))}
     </StyledSlider>
   );
 }
 
 export default Titleslick;
+const S = styled.div`
+  display: flex;
+`;
 const Sdiv = styled.div`
-  background-color: gray;
-  color: white;
+  background-color: rgb(238, 238, 238);
+  color: black;
   border-radius: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 100px;
+  padding-top: 5px;
+  padding-bottom: 5px;
   height: 20px;
 `;
 const StyledSlider = styled(Slider)`
