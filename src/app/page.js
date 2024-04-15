@@ -28,6 +28,7 @@ export default function Home() {
     height: "510px",
     width: "100%",
   };
+
   const cturl = "http://localhost:3001/ctitem";
 
   const ctdata = api(cturl);
@@ -70,12 +71,19 @@ export default function Home() {
     <div className={styles.main}>
       <div className={styles.maincom}>
         <div className={styles.mainad}>
-          <div className={styles.mainad1}></div>
+          <div className={styles.mainad1}>
+            <img
+              className={styles.mainad1img}
+              alt="img"
+              src="https://image.ohou.se/i/bucketplace-v2-development/uploads/cards/project/170348384671728438.jpg?w=850&h=510&c=c"
+            />
+          </div>
           <div className={styles.mainad2}>
             <SlickComponent
               settings={settings}
               slides={data}
               sliderImgStyle={sliderImgStyle}
+              className={styles.sliderImg}
             />
           </div>
         </div>

@@ -7,6 +7,10 @@
 .maincom {
   width: 1300px;
 }
+.sliderImg:hover {
+  height: 100px;
+  width: 100px;
+}
 .mainad {
   margin-top: 20px;
   height: 510px;
@@ -14,21 +18,43 @@
   display: flex;
 }
 .mainad1 {
-  margin: 15px;
-  background-repeat: no-repeat;
-  background-position: center;
+  margin-right: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border-radius: 5px;
-  width: 65%;
+  width: 70%;
   height: 100%;
-  background-image: url("https://image.ohou.se/i/bucketplace-v2-development/uploads/cards/project/170348384671728438.jpg?w=850&h=510&c=c");
 }
+.mainad1:hover {
+  height: 100%;
+  width: 70%;
+  overflow: hidden;
+}
+
+.mainad1img {
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: inherit;
+}
+.mainad1img:hover {
+  width: 110%;
+  height: 110%;
+}
+
 .mainad2 {
   border-radius: 5px;
-  margin: 15px;
+  margin-left: 15px;
   width: 30%;
   height: 20%;
 }
-
+/* .mainad2:hover {
+  height: 100%;
+  width: 70%;
+  overflow: hidden;
+} */
 .mainctop {
   display: flex;
   width: 1280px;
@@ -49,6 +75,7 @@
   height: 100px;
   width: 100%;
 }
+
 .mainitem1 {
   width: 100%;
   display: Flex;
@@ -99,11 +126,29 @@
   align-items: center;
   justify-content: center;
 }
+
 .Midtitle {
-  height: 30%;
+  height: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around;
+}
+.Miditemi {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 60%;
+  width: 90%;
+}
+.Miditemi :hover {
+  height: 70%;
+  width: 100%;
+  overflow: hidden;
+  background-color: aliceblue;
 }
 .Midimg {
-  height: 70%;
+  height: 100%;
   border-radius: 3px;
   width: 100%;
 
@@ -111,6 +156,11 @@
   background-repeat: no-repeat;
   background-size: contain;
 }
+.Midimg:hover {
+  width: 110%;
+  height: 110%;
+}
+
 .box {
   width: 200px;
   height: 200px;
