@@ -143,26 +143,30 @@ export default function Home() {
             <Link href="/">더보기</Link>
           </div>
           <div className={styles.ctitem}>
-            <Mid first={23} last={25} />
+            <Mid first={23} last={25} itemWidth="33%" />
           </div>
 
           <div className={styles.Midtop}>
             <h3>오늘의 기획전</h3>
             <Link href="/">더보기</Link>
           </div>
-          <div className={styles.ctitem}>
-            <Mid first={11} last={13} />
+          <div className={styles.ctitem1}>
+            <Mid first={11} last={13} itemWidth="100%" />
             <div className={styles.cticon}>
               <AiOutlineArrowRight className={styles.cicon} />
-              <Link href="/">더보기</Link>
+              <Link href="/" style={{ textDecoration: "none", color: "black" }}>
+                더보기
+              </Link>
             </div>
           </div>
-          <div className={styles.Midtop}>
-            <h3>베스트</h3>
-            <Link href="/">더보기</Link>
+          <div className={styles.MidFooter}>
+            <div className={styles.Midtop}>
+              <h3>베스트</h3>
+              <Link href="/">더보기</Link>
+            </div>
+            <Titleslick />
+            <StoreMain first={7} last={9} itemWidth="33%" itemheight="70%" />
           </div>
-          <Titleslick />
-          <StoreMain first={7} last={9} />
         </div>
       </div>
     </div>
