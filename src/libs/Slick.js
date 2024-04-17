@@ -47,6 +47,7 @@ const Slidiv = styled.div`
   align-items: center;
   justify-content: center;
 `;
+
 const Sliderimg = styled.img`
   border-radius: ${(props) => props.style?.borderRadius || "inherit"};
   height: ${(props) => props.style?.height || "auto"};

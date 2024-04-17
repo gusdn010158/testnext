@@ -405,5 +405,55 @@
     {
       "img": "https://image.ohou.se/i/bucketplace-v2-development/uploads/banners/home_banner/171169995555675511.png?w=360"
     }
+  ],
+  "Header": [
+    {
+      "id": 0,
+      "title": "커뮤니티",
+      "href": "",
+      "one": "홈",
+      "two": "추천",
+      "three": "#채널",
+      "four": "집들이",
+      "five": "집사진",
+      "six": "3D인테리어",
+      "seven": "살림수납",
+      "eight": "콜레터블",
+      "nine": "홈스토랑",
+      "ten": "핫플레이스",
+      "tenone": "육아"
+    },
+    {
+      "id": 1,
+      "title": "쇼핑",
+      "href": "Store",
+      "one": "쇼핑홈",
+      "two": "카테고리",
+      "three": "베스트",
+      "four": "오늘의 딜",
+      "five": "리퍼마켓",
+      "six": "오!굿즈",
+      "seven": "빠른배송",
+      "eight": "오!쇼룸",
+      "nine": "프리미엄",
+      "ten": "기획전",
+      "tenone": ""
+    },
+    {
+      "id": 2,
+      "title": "인테리어/생활",
+      "href": "Expert",
+      "one": "홈",
+      "two": "주거공간시공",
+      "three": "상업공간시공",
+      "four": "시공자재랭킹",
+      "five": "제품설치",
+      "six": "이사",
+      "seven": "집보기 체크리스트",
+      "eight": "아파트시공사례",
+      "nine": "",
+      "ten": "",
+      "tenone": ""
+    }
   ]
 }

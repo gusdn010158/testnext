@@ -3,57 +3,33 @@ import React, { useState } from "react";
 import styles from "../Header/head.module.css";
 import Link from "next/link";
 import { FaCartShopping } from "react-icons/fa6";
-
+import api from "@/services/api";
 import HeaderBest from "./HeaderBest";
 
 function Headers() {
-  const [activeMenu, setActiveMenu] = useState(null);
-
-  const handleMenuHover = (menuName) => {
-    setActiveMenu(menuName);
-  };
-
-  const handleMenuLeave = () => {
-    setActiveMenu(null);
-  };
-
+  const fristurl = "http://localhost:3001/Header";
+  const friststoredata = api(fristurl);
+  const [index, setIndex] = useState(0);
   return (
     <>
       <div className={styles.head}>
         <div className={styles.header}>
           <div className={styles.headlogo}>
             <h2>
-              <Link className={styles.headLink} href="/${router.locale}">
+              <Link className={styles.headLink} href="/">
                 오늘의 집
               </Link>
             </h2>
 
-            <Link
-              className={styles.headLink}
-              href="/"
-              onMouseEnter={() => handleMenuHover("community")}
-              onMouseLeave={handleMenuLeave}
-            >
-              커뮤니티
-            </Link>
-
-            <Link
-              className={styles.headLink}
-              href="/Store"
-              onMouseEnter={() => handleMenuHover("shopping")}
-              onMouseLeave={handleMenuLeave}
-            >
-              쇼핑
-            </Link>
-
-            <Link
-              className={styles.headLink}
-              href="/Expert"
-              onMouseEnter={() => handleMenuHover("interior")}
-              onMouseLeave={handleMenuLeave}
-            >
-              인테리어/생활
-            </Link>
+            {friststoredata.map((item) => (
+              <Link
+                className={styles.headLink}
+                href={`/${item.href}`}
+                onMouseOver={() => setIndex(item.id)}
+              >
+                {item.title}
+              </Link>
+            ))}
           </div>
           <div className={styles.headlogin}>
             <input placeholder="시공 업체 검색" />
@@ -75,63 +51,30 @@ function Headers() {
           </div>
         </div>
       </div>
-      {activeMenu === "community" ||
-        (activeMenu === null && (
-          <div className={styles.headerbt}>
-            <div className={styles.btleft}>
-              <Link href="/">홈</Link>
-              <Link href="/">추천</Link>
-              <Link href="/">#채널</Link>
-              <Link href="/">집들이</Link>
-              <Link href="/">집사진</Link>
-              <Link href="/">3D인테리어</Link>
-              <Link href="/">살림수납</Link>
-              <Link href="/">콜레터블</Link>
-              <Link href="/">홈스토랑</Link>
-              <Link href="/">핫플레이스</Link>
-              <Link href="/">육아</Link>
-            </div>
-            <div className={styles.btright}>
-              <HeaderBest />
-            </div>
-          </div>
-        ))}
-      {activeMenu === "shopping" && (
-        <div className={styles.headerbt}>
-          <div className={styles.btleft}>
-            <Link href="/">쇼핑홈</Link>
-            <Link href="/">카테고리</Link>
-            <Link href="/">베스트</Link>
-            <Link href="/">오늘의 딜</Link>
-            <Link href="/">리퍼마켓</Link>
-            <Link href="/">오!굿즈</Link>
-            <Link href="/">빠른배송</Link>
-            <Link href="/">오!쇼룸</Link>
-            <Link href="/">프리미엄</Link>
-            <Link href="/">기획전</Link>
-          </div>
-          <div className={styles.btright}>
-            <HeaderBest />
-          </div>
+      <div className={styles.headerbt}>
+        <div className={styles.btleft}>
+          {friststoredata
+            .filter((item) => index === item.id)
+            .map((item) => (
+              <>
+                <Link href="/">{item.one}</Link>
+                <Link href="/">{item.two}</Link>
+                <Link href="/">{item.three}</Link>
+                <Link href="/">{item.four}</Link>
+                <Link href="/">{item.five}</Link>
+                <Link href="/">{item.six}</Link>
+                <Link href="/">{item.seven}</Link>
+                <Link href="/">{item.eight}</Link>
+                <Link href="/">{item.nine}</Link>
+                <Link href="/">{item.ten}</Link>
+                <Link href="/">{item.tenone}</Link>
+              </>
+            ))}
         </div>
-      )}
-      {activeMenu === "interior" && (
-        <div className={styles.headerbt}>
-          <div className={styles.btleft}>
-            <Link href="/">홈</Link>
-            <Link href="/">주거공간시공</Link>
-            <Link href="/">상업공간시공</Link>
-            <Link href="/">시공자재랭킹</Link>
-            <Link href="/">제품설치</Link>
-            <Link href="/">이사</Link>
-            <Link href="/">집보기 체크리스트</Link>
-            <Link href="/">아파트시공사례</Link>
-          </div>
-          <div className={styles.btright}>
-            <HeaderBest />
-          </div>
+        <div className={styles.btright}>
+          <HeaderBest />
         </div>
-      )}
+      </div>
     </>
   );
 }
