@@ -7,8 +7,8 @@ import api from "@/services/api";
 import HeaderBest from "./HeaderBest";
 
 function Headers() {
-  const fristurl = "http://localhost:3001/Header";
-  const friststoredata = api(fristurl);
+  const url = "http://localhost:3001/Header";
+  const Header = api(url);
   const [index, setIndex] = useState(0);
   return (
     <>
@@ -21,7 +21,7 @@ function Headers() {
               </Link>
             </h2>
 
-            {friststoredata.map((item) => (
+            {Header.map((item) => (
               <Link
                 className={styles.headLink}
                 href={`/${item.href}`}
@@ -43,7 +43,7 @@ function Headers() {
             <Link className={styles.headLink} href="/">
               회원가입
             </Link>
-            <Link className={styles.headLink} href="/customer">
+            <Link className={styles.headLink} href="/Customer">
               고객 센터
             </Link>
 
@@ -53,26 +53,24 @@ function Headers() {
       </div>
       <div className={styles.headerbt}>
         <div className={styles.btleft}>
-          {friststoredata
-            .filter((item) => index === item.id)
-            .map((item) => (
-              <>
-                <Link href="/">{item.one}</Link>
-                <Link href="/">{item.two}</Link>
-                <Link href="/">{item.three}</Link>
-                <Link href="/">{item.four}</Link>
-                <Link href="/">{item.five}</Link>
-                <Link href="/">{item.six}</Link>
-                <Link href="/">{item.seven}</Link>
-                <Link href="/">{item.eight}</Link>
-                <Link href="/">{item.nine}</Link>
-                <Link href="/">{item.ten}</Link>
-                <Link href="/">{item.tenone}</Link>
-              </>
-            ))}
+          {Header.filter((item) => index === item.id).map((item) => (
+            <>
+              <Link href="/">{item.one}</Link>
+              <Link href="/">{item.two}</Link>
+              <Link href="/">{item.three}</Link>
+              <Link href="/">{item.four}</Link>
+              <Link href="/">{item.five}</Link>
+              <Link href="/">{item.six}</Link>
+              <Link href="/">{item.seven}</Link>
+              <Link href="/">{item.eight}</Link>
+              <Link href="/">{item.nine}</Link>
+              <Link href="/">{item.ten}</Link>
+              <Link href="/">{item.tenone}</Link>
+            </>
+          ))}
         </div>
         <div className={styles.btright}>
-          <HeaderBest />
+          <HeaderBest first={1} last={10} />
         </div>
       </div>
     </>

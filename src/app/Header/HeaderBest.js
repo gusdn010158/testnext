@@ -7,12 +7,12 @@ import styles from "../Header/head.module.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-const SlickUIComponent = () => {
+const SlickUIComponent = ({ first, last }) => {
   const url = "http://localhost:3001/mainitem";
 
   const data = api(url);
   const [toast, setToast] = useState(false);
-
+  const headerbt = data.slice(first - 1, last);
   const onClick = () => {
     setToast(!toast);
   };
@@ -33,7 +33,7 @@ const SlickUIComponent = () => {
     <>
       <div className={styles.slickTop}>
         <Slider {...settings}>
-          {data.map((m) => (
+          {headerbt.map((m) => (
             <div className={styles.top} key={m.id}>
               {m.id} {m.name}
             </div>
@@ -49,7 +49,7 @@ const SlickUIComponent = () => {
             <h3>인기 검색어</h3>
             <AiOutlineUp />
           </div>
-          {data.map((m) => (
+          {headerbt.map((m) => (
             <div className={styles.toasttop} key={m.id}>
               {m.id} {m.name}
             </div>

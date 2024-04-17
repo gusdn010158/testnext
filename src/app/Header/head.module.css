@@ -34,6 +34,9 @@
   text-decoration: none;
   color: black;
 }
+.headLink:active {
+  color: rgb(23, 171, 230);
+}
 .headLink:hover {
   color: skyblue;
 }
