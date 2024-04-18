@@ -5,7 +5,7 @@ import Link from "next/link";
 import { FaCartShopping } from "react-icons/fa6";
 import api from "@/services/api";
 import HeaderBest from "./HeaderBest";
-
+import { BiChevronDown } from "react-icons/bi";
 function Headers() {
   const url = "http://localhost:3001/Header";
   const Header = api(url);
@@ -34,20 +34,29 @@ function Headers() {
           <div className={styles.headlogin}>
             <input placeholder="시공 업체 검색" />
 
-            <Link className={styles.headLink} href="/cart">
+            <Link className={styles.headLink} href="/Cart">
               <FaCartShopping />
             </Link>
-            <Link className={styles.headLink} href="/">
+            <Link
+              className={styles.headLink}
+              href="https://ohou.se/users/sign_in?redirect_to=%2Fcart"
+            >
               로그인
             </Link>
-            <Link className={styles.headLink} href="/">
+            <Link
+              className={styles.headLink}
+              href="https://ohou.se/normal_users/new"
+            >
               회원가입
             </Link>
             <Link className={styles.headLink} href="/Customer">
               고객 센터
             </Link>
 
-            <div>글쓰기</div>
+            <div className={styles.headwrite}>
+              글쓰기
+              <BiChevronDown />
+            </div>
           </div>
         </div>
       </div>

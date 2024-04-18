@@ -1,9 +1,10 @@
 "use client";
-import React from "react";
+import React, { useState } from "react";
 import api from "@/services/api";
 import styled from "styled-components";
-import { AiOutlineDown } from "react-icons/ai";
+import { BiChevronDown } from "react-icons/bi";
 import { CgSearch } from "react-icons/cg";
+import { BiChevronUp } from "react-icons/bi";
 function Customer() {
   const url = "http://localhost:3001/Customer";
 
@@ -11,6 +12,11 @@ function Customer() {
   const durl = "http://localhost:3001/Custom";
 
   const ddata = api(durl);
+  const [open, setOpen] = useState(null); // 열린 아이템의 id를 저장할 state
+
+  const handleOpen = (id) => {
+    setOpen(open === id ? null : id); // 클릭한 아이템의 id가 이미 열려있으면 닫고, 아니면 열기
+  };
   return (
     <Custom>
       <Ctop>
@@ -47,15 +53,18 @@ function Customer() {
         </CbtTop>
         <Cbtdiv>
           {data.map((item) => (
-            <Btncompo>
-              <Compo>
-                <CgSearch />
-                {item.text}
-              </Compo>
-              <Combtn>
-                <AiOutlineDown />
-              </Combtn>
-            </Btncompo>
+            <div key={item.id}>
+              <Btncompo onClick={() => handleOpen(item.id)}>
+                <Compo>
+                  <CgSearch />
+                  {item.text}
+                </Compo>
+                <Combtn>
+                  {open === item.id ? <BiChevronUp /> : <BiChevronDown />}
+                </Combtn>
+              </Btncompo>
+              {open === item.id && <Compopen>{item.open}</Compopen>}
+            </div>
           ))}
         </Cbtdiv>
       </Cbt>
@@ -64,8 +73,17 @@ function Customer() {
 }
 
 export default Customer;
+const Compopen = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 960px;
+  padding: 20px;
+  border-radius: 5px;
+  background-color: rgb(219, 219, 219);
+  height: auto;
+`;
 const Btncompo = styled.button`
-  border-bottom: 1px solid gray;
+  border-bottom: 1px solid rgb(219, 219, 219);
   border-top: none;
   border-right: none;
   border-left: none;
@@ -81,8 +99,12 @@ const Cbtdiv = styled.div`
   flex-direction: column;
 `;
 
-const Combtn = styled.span``;
-const Compo = styled.span``;
+const Combtn = styled.span`
+  font-size: 40px;
+`;
+const Compo = styled.span`
+  font-size: 16px;
+`;
 const Btndiv = styled.div`
   width: 100%;
 `;
@@ -133,7 +155,7 @@ const Ctoprt = styled.div`
   width: 400px;
   height: 300px;
   padding: 30px;
-  background-color: gray;
+  background-color: rgb(219, 219, 219);
 `;
 const Cbt = styled.div`
   display: flex;
@@ -147,7 +169,7 @@ const CbtTop = styled.div`
   margin: 50px 0px 50px 0px;
 `;
 const CbtTopsp = styled.span`
-  background-color: gray;
+  background-color: rgb(219, 219, 219);
   border-radius: 25px;
   padding: 10px;
   margin-left: 20px;

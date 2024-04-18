@@ -41,8 +41,9 @@
   color: skyblue;
 }
 
-.headlogin div {
-  background-color: rgb(23, 139, 216);
+.headwrite {
+  background-color: rgb(83, 163, 216);
+  border-radius: 5px;
   width: 100px;
   height: 40px;
   display: flex;
