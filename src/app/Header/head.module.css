@@ -56,8 +56,8 @@
   height: 50px;
   display: Flex;
   align-items: center;
-  padding-left: 360px;
-  padding-right: 360px;
+  padding-left: 350px;
+  padding-right: 350px;
   justify-content: space-between;
 }
 .btleft {

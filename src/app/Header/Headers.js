@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import styles from "../Header/head.module.css";
 import Link from "next/link";
 import { FaCartShopping } from "react-icons/fa6";
@@ -9,7 +9,11 @@ import { BiChevronDown } from "react-icons/bi";
 function Headers() {
   const url = "http://localhost:3001/Header";
   const Header = api(url);
-  const [index, setIndex] = useState(0);
+  const [index, setIndex] = useState(1);
+  useEffect(() => {
+    // 페이지가 처음으로 렌더링될 때 index를 1로 설정하여 id가 1인 컴포넌트를 보여줌
+    setIndex(1);
+  }, []);
   return (
     <>
       <div className={styles.head}>

@@ -123,7 +123,6 @@ export default function Home() {
           </div>
           <div className={styles.Midtop}>
             <h3>카테고리별 상품 찾기</h3>
-            <div></div>
           </div>
           <div className={styles.mainitem}>
             <SlickComponent
@@ -151,7 +150,7 @@ export default function Home() {
             <Link href="/">더보기</Link>
           </div>
           <div className={styles.ctitem1}>
-            <Mid first={11} last={13} itemWidth="100%" />
+            <Mid first={11} last={13} itemWidth="33%" />
             <div className={styles.cticon}>
               <AiOutlineArrowRight className={styles.cicon} />
               <Link href="/" style={{ textDecoration: "none", color: "black" }}>
