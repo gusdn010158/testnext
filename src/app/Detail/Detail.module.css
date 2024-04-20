@@ -79,13 +79,37 @@
   justify-content: space-between;
   background-color: rgb(219, 219, 219);
   align-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.drcome div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 195px;
 }
 .dranr {
   border: 1px solid black;
   border-radius: 5px;
-  width: 250px;
-  height: 40px;
+  width: 210px;
+  height: 33px;
   display: Flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
+  margin-bottom: 30px;
+}
+.drbt {
+  display: Flex;
+}
+.drbt p {
+  margin-right: 20px;
+}
+.drbt1 {
+  display: flex;
+}
+.drbt1 p {
+  margin: 0px 20px 0px 0px;
+}
+.drbottom {
+  border-top: 1px solid rgb(219, 219, 219);
 }

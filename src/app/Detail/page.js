@@ -2,6 +2,10 @@
 import React, { useState, useEffect } from "react";
 import api from "@/services/api";
 import styles from "./Detail.module.css";
+import { BsBoxSeamFill } from "react-icons/bs";
+import { CgChevronDown } from "react-icons/cg";
+import { CgChevronRight } from "react-icons/cg";
+import { AiOutlineDownload } from "react-icons/ai";
 function page(props) {
   const url = "http://localhost:3001/test";
   const test = api(url);
@@ -48,18 +52,33 @@ function page(props) {
               <h2>35,900원</h2>
               <div className={styles.drspan}>특가</div>
             </div>
-            <button className={styles.drcoupon}>쿠폰받기</button>
+            <button className={styles.drcoupon}>
+              쿠폰받기 <AiOutlineDownload />
+            </button>
           </div>
-          <div>
-            <span>혜택</span>36P 적립 (WELCOME 0.1% 적립)
+          <div className={styles.drbt1}>
+            <p>혜택</p>
+            <div>36P 적립 (WELCOME 0.1% 적립)</div>
           </div>
-          <div>
-            <span>배송</span>3,500원 (70,000원 이상 구매시 무료배송)
+          <div className={styles.drbt}>
+            <p>배송</p>
+            <div>
+              <p>3,500원 (70,000원 이상 구매시 무료배송)</p>
+              <div>일반택배</div>
+              <div>제주도/도서산간 지역 5,000원</div>
+              <div className={styles.drcome}>
+                <div>
+                  <BsBoxSeamFill />
+                  4/26(금) 도착 예정 84%
+                </div>
+                <CgChevronDown />
+              </div>
+              <div className={styles.dranr}>
+                묶음 배송상품 추가하기 <CgChevronRight />
+              </div>
+            </div>
           </div>
-          <div>일반택배</div>
-          <div>제주도/도서산간 지역 5,000원</div>
-          <div className={styles.drcome}>4/26(금) 도착 예정 84%</div>
-          <div className={styles.dranr}>묶음 배송상품 추가하기</div>
+          <div className={styles.drbottom}></div>
         </div>
       </div>
     </div>
