@@ -574,5 +574,33 @@
     {
       "name": "서비스/기타"
     }
+  ],
+  "test": [
+    {
+      "id": 1,
+      "name": "월간가구세일",
+      "images": [
+        {
+          "index": 1,
+          "img": "https://image.ohou.se/i/bucketplace-v2-development/uploads/productions/169821856938204382.jpg?gif=1&w=640&h=640&c=c&webp=1"
+        },
+        {
+          "index": 2,
+          "img": "https://image.ohou.se/i/bucketplace-v2-development/uploads/productions/images/165483857498060691.jpg?gif=1&w=640&h=640&c=c&webp=1"
+        },
+        {
+          "index": 3,
+          "img": "https://image.ohou.se/i/bucketplace-v2-development/uploads/productions/images/170356346803667680.jpg?gif=1&w=640&h=640&c=c&webp=1"
+        },
+        {
+          "index": 4,
+          "img": "https://image.ohou.se/i/bucketplace-v2-development/uploads/productions/images/170323140080794847.jpg?gif=1&w=640&h=640&c=c&webp=1"
+        },
+        {
+          "index": 5,
+          "img": "https://image.ohou.se/i/bucketplace-v2-development/uploads/productions/images/169821858307654836.jpg?gif=1&w=640&h=640&c=c&webp=1"
+        }
+      ]
+    }
   ]
 }
