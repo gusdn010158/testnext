@@ -51,12 +51,14 @@
 .storeitem {
   width: 23%;
   height: 500px;
-
+  text-decoration: none;
+  color: black;
   display: flex;
   flex-direction: column;
 }
 .storeimgitem {
   display: flex;
+
   justify-content: center;
   align-items: center;
   width: 100%;

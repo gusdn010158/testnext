@@ -84,7 +84,7 @@ function page() {
           </div>
         </div>
         <div className={styles.storein2}>
-          <StoreMain first={1} last={18} />
+          <StoreMain first={1} last={16} />
         </div>
       </div>
     </div>

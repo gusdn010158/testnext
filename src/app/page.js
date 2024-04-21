@@ -111,7 +111,7 @@ export default function Home() {
             <Link href="/">더보기</Link>
           </div>
           <div className={styles.ctitem}>
-            <Mid first={19} last={22} />
+            <Mid first={17} last={20} />
           </div>
 
           <div className={styles.Midtop}>
@@ -119,7 +119,7 @@ export default function Home() {
             <Link href="/">더보기</Link>
           </div>
           <div className={styles.ctitem}>
-            <Mid first={19} last={22} />
+            <Mid first={17} last={20} />
           </div>
           <div className={styles.Midtop}>
             <h3>카테고리별 상품 찾기</h3>
@@ -142,7 +142,7 @@ export default function Home() {
             <Link href="/">더보기</Link>
           </div>
           <div className={styles.ctitem}>
-            <Mid first={23} last={25} itemWidth="33%" />
+            <Mid first={21} last={23} itemWidth="33%" />
           </div>
 
           <div className={styles.Midtop}>

@@ -1,5 +1,6 @@
 import React from "react";
 import api from "@/services/api";
+import Link from "next/link";
 import styles from "../Store/store.module.css";
 function StoreMain({ first, last, itemWidth, itemheight }) {
   const fristurl = "http://localhost:3001/store";
@@ -10,7 +11,8 @@ function StoreMain({ first, last, itemWidth, itemheight }) {
   return (
     <div className={styles.storeflex}>
       {store.map((m) => (
-        <div
+        <Link
+          href={`/Detail/${m.id}`}
           className={styles.storeitem}
           style={{ width: itemWidth, height: itemheight }}
         >
@@ -24,7 +26,7 @@ function StoreMain({ first, last, itemWidth, itemheight }) {
             <div className={styles.emr}>특가</div>
             <div className={styles.gkf}>할인 쿠폰</div>
           </div>
-        </div>
+        </Link>
       ))}
     </div>
   );

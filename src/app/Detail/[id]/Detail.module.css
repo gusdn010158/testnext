@@ -216,3 +216,30 @@
 .drcomspan {
   width: 170px;
 }
+.drp {
+  text-decoration: line-through;
+  color: rgb(219, 219, 219);
+  margin-left: 20px;
+}
+.drstar {
+  color: skyblue;
+}
+.drpdiv {
+  display: flex;
+  align-items: center;
+}
+.drtitle {
+  display: flex;
+
+  line-height: 33px;
+}
+.drtitle h3 {
+  width: 80%;
+}
+.drtitle span {
+  margin-top: 27px;
+  width: 20%;
+  display: flex;
+  justify-content: space-around;
+  font-size: 25px;
+}
