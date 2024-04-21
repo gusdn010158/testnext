@@ -6,10 +6,15 @@ import { BsBoxSeamFill } from "react-icons/bs";
 import { CgChevronDown } from "react-icons/cg";
 import { CgChevronRight } from "react-icons/cg";
 import { AiOutlineDownload } from "react-icons/ai";
+import { DiHtml53DEffects } from "react-icons/di";
 function page(props) {
   const url = "http://localhost:3001/test";
   const test = api(url);
   const [index, setIndex] = useState(1);
+  const [open, setOpen] = useState(null);
+  const handleOpen = () => {
+    setOpen(!open);
+  };
   useEffect(() => {
     // 페이지가 처음으로 렌더링될 때 index를 1로 설정하여 id가 1인 컴포넌트를 보여줌
     setIndex(1);
@@ -66,19 +71,92 @@ function page(props) {
               <p>3,500원 (70,000원 이상 구매시 무료배송)</p>
               <div>일반택배</div>
               <div>제주도/도서산간 지역 5,000원</div>
-              <div className={styles.drcome}>
+
+              <div className={styles.drcome} onClick={() => handleOpen()}>
                 <div>
                   <BsBoxSeamFill />
                   4/26(금) 도착 예정 84%
                 </div>
                 <CgChevronDown />
               </div>
+              {open && (
+                <div className={styles.dropen}>
+                  <div className={styles.drcomeopen}>
+                    <span className={styles.drcomspan}>
+                      4/25(목)까지 도착 예정
+                    </span>
+                    <div className={styles.line}></div> <span>74%</span>
+                  </div>
+                  <div className={styles.drcomeopen}>
+                    <span className={styles.drcomspan}>
+                      4/26(금)까지 도착 예정
+                    </span>
+                    <div className={styles.line}></div>
+                    <span>84%</span>
+                  </div>
+                  <div className={styles.drcomeopen}>
+                    <span className={styles.drcomspan}>
+                      4/29(월)까지 도착 예정
+                    </span>
+                    <div className={styles.line}></div> <span>91%</span>
+                  </div>
+                </div>
+              )}
+
               <div className={styles.dranr}>
                 묶음 배송상품 추가하기 <CgChevronRight />
               </div>
             </div>
           </div>
-          <div className={styles.drbottom}></div>
+          <div className={styles.drbottom}>
+            <div className={styles.drbottomtop}>
+              <p>
+                <DiHtml53DEffects />
+                헬로우 슬립
+              </p>
+              <button>
+                브랜드홈
+                <CgChevronRight />
+              </button>
+            </div>
+            <div className={styles.drbottommid}>
+              <select>
+                <option>색상</option>
+                <option value="banana">바나나</option>
+                <option value="apple">사과</option>
+                <option value="orange">오렌지</option>
+              </select>
+              <select>
+                <option>구성 및 사이즈</option>
+                <option value="banana">바나나</option>
+                <option value="apple">사과</option>
+                <option value="orange">오렌지</option>
+              </select>
+              <select>
+                <option>추가상품 (선택)</option>
+                <option value="banana">바나나</option>
+                <option value="apple">사과</option>
+                <option value="orange">오렌지</option>
+              </select>
+            </div>
+            <div className={styles.drbottombt}>
+              <div className={styles.drbottomtop}>
+                <p>주문 금액</p>
+                <h2>0원</h2>
+              </div>
+              <div className={styles.drbottombt_coupon}>
+                <p>받지 않은 쿠폰이 더 있어요</p>
+                <div>
+                  쿠폰받기 <AiOutlineDownload />
+                </div>
+              </div>
+              <div className={styles.drbottombt_button}>
+                <button className={styles.drbottombt_button1}>장바구니</button>
+                <button className={styles.drbottombt_button2}>바로구매</button>
+              </div>
+              <div className={styles.drbottombt_img}></div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -86,28 +164,3 @@ function page(props) {
 }
 
 export default page;
-{
-  /*
-    // // },
-
-    // // {
-    // //   "id": 2,
-    // //   "name": "오늘의달",
-    // //   "img": "https://image.ohou.se/i/bucketplace-v2-development/uploads/shortcut/home_feed_shortcut_sets/167198007152582471.png?w=144"
-    // // },
-    // // {
-    // //   "id": 3,
-    // //   "name": "수납꿀팁",
-    // //   "img": "https://image.ohou.se/i/bucketplace-v2-development/uploads/shortcut/home_feed_shortcut_sets/169880736853477508.png?w=144"
-    // // },
-    // // {
-    // //   "id": 4,
-    // //   "name": "행운출첵",
-    // //   "img": "https://image.ohou.se/i/bucketplace-v2-development/uploads/shortcut/home_feed_shortcut_sets/170184318298899959.png?w=144"
-    // // },
-    // // {
-    // //   "id": 5,
-    // //   "name": "집들이",
-    // //   "img": "https://image.ohou.se/i/bucketplace-v2-development/uploads/shortcut/home_feed_shortcut_sets/167198010271968429.png?w=144"
-    // // }*/
-}
