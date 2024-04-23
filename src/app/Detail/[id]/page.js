@@ -13,7 +13,7 @@ import { BsFillShareFill } from "react-icons/bs";
 function page(props) {
   const url = `http://localhost:3001/test`;
   const test = api(url);
-  const [index, setIndex] = useState(1);
+  const [index, setIndex] = useState(0);
   const [open, setOpen] = useState(null);
   const handleOpen = () => {
     setOpen(!open);
@@ -51,7 +51,7 @@ function page(props) {
         </div>
         {selectedTestData && (
           <div className={styles.dright}>
-            <div>{selectedTestData.company}</div>
+            <div className={styles.drightdd}> {selectedTestData.company}</div>
             <div className={styles.drtitle}>
               <h3>{selectedTestData.title}</h3>
               <span>
@@ -72,7 +72,8 @@ function page(props) {
             </div>
             <div className={styles.drdiv}>
               <div>
-                <h2> {selectedTestData.price}원</h2>
+                <h1> {selectedTestData.price}</h1>
+                <h2>원</h2>
                 <div className={styles.drspan}>특가</div>
               </div>
               <button className={styles.drcoupon}>
@@ -81,19 +82,33 @@ function page(props) {
             </div>
             <div className={styles.drbt1}>
               <p>혜택</p>
-              <div>36P 적립 (WELCOME 0.1% 적립)</div>
+              <p className={styles.drbtpp}>
+                36P{" "}
+                <span className={styles.drbtdivdiv}>
+                  적립 (WELCOME 0.1% 적립)
+                </span>
+              </p>
             </div>
             <div className={styles.drbt}>
               <p>배송</p>
               <div>
-                <p>3,500원 (70,000원 이상 구매시 무료배송)</p>
+                <p className={styles.drbtpp}>
+                  3,500원{" "}
+                  <span className={styles.drbtdivdiv}>
+                    (70,000원 이상 구매시 무료배송)
+                  </span>
+                </p>
                 <div>일반택배</div>
-                <div>제주도/도서산간 지역 5,000원</div>
+                <div className={styles.drbtdiv1}>
+                  제주도/도서산간 지역 5,000원
+                </div>
 
                 <div className={styles.drcome} onClick={() => handleOpen()}>
                   <div>
                     <BsBoxSeamFill />
-                    4/26(금) 도착 예정 84%
+                    <span className={styles.spanspan}>
+                      4/26(금) <span>도착 예정 84%</span>
+                    </span>
                   </div>
                   <CgChevronDown />
                 </div>
