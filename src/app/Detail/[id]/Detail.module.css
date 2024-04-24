@@ -46,6 +46,7 @@
 }
 .drdiv {
   display: Flex;
+  margin-bottom: 13px;
   justify-content: space-between;
   align-items: center;
 }
@@ -53,10 +54,15 @@
   display: flex;
   align-items: center;
 }
+.drdiv div h1 {
+  margin: 0;
+}
 .drdiv div h2 {
+  margin: 0;
   font-weight: 400;
 }
 .drspan {
+  margin: 0;
   background-color: rgb(255, 131, 99);
   color: white;
   display: Flex;
@@ -67,6 +73,7 @@
   height: 25px;
 }
 .drcoupon {
+  margin: 0;
   background-color: rgb(255, 131, 99);
   color: white;
   border-radius: 5px;
@@ -91,7 +98,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 195px;
+  width: 175px;
 }
 .dranr {
   border: 1px solid rgb(219, 219, 219);

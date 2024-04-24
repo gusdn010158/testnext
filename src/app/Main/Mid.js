@@ -15,6 +15,7 @@ function Mid({ last, first, itemWidth }) {
             <img className={styles.Midimg} alt="12" src={item.img} />
           </div>
           <div className={styles.Midtitle}>
+            <div className={styles.Midtitled}>{item.txt}</div>
             <div>{item.title}</div>
           </div>
         </div>

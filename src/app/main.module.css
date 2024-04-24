@@ -85,10 +85,17 @@
 .Midtop {
   width: 1190px;
   height: 70px;
-  margin-bottom: 20px;
+  margin-top: 30px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+.Midtitled {
+  font-size: 17px;
+  font-weight: 600;
+}
+.Midtop h3 {
+  margin: 0;
 }
 .Midtop > a {
   color: rgb(76, 181, 223);
@@ -171,5 +178,5 @@
 }
 .MidFooter {
   width: 100%;
-  height: 900px;
+  height: 850px;
 }

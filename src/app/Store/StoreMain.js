@@ -20,11 +20,11 @@ function StoreMain({ first, last, itemWidth, itemheight }) {
             <img className={styles.storeimg} src={m.img} />
           </div>
           <div className={styles.storetitle}>
-            <div>{m.name}</div>
-            <div>{m.text}</div>
-            <div>{m.price}원</div>
+            <div className={styles.storetitle1}>{m.name}</div>
+            <div className={styles.storetitle2}>{m.text}</div>
+            <div className={styles.storetitle3}>{m.price}</div>
             <div className={styles.emr}>특가</div>
-            <div className={styles.gkf}>할인 쿠폰</div>
+            <div className={styles.gkf}>무료배송</div>
           </div>
         </Link>
       ))}

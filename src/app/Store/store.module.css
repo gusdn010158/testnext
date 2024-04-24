@@ -87,7 +87,16 @@
   align-items: flex-start;
   justify-content: space-around;
 }
-
+.storetitle1 {
+  font-size: 12px;
+}
+.storetitle2 {
+  font-size: 13px;
+}
+.storetitle3 {
+  font-size: 18px;
+  font-weight: 600;
+}
 .sticon {
   background-position: center;
   background-repeat: no-repeat;
@@ -111,17 +120,27 @@
 }
 .emr {
   margin-top: 10px;
-
-  background-color: brown;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 13px;
+  background-color: rgb(223, 28, 28);
   width: 35px;
+  height: 20px;
   border-radius: 5px;
   color: white;
 }
 .gkf {
+  font-size: 13px;
   margin-top: 10px;
-  width: 70px;
+  width: 60px;
+  height: 20px;
+  display: Flex;
+  justify-content: center;
+  align-items: center;
   border-radius: 5px;
-  border: 1px solid black;
+  color: rgb(138, 138, 138);
+  background-color: rgb(212, 210, 210);
 }
 .slickst {
   height: 150px;

@@ -27,7 +27,7 @@ function Headers() {
 
             {Header.map((item) => (
               <Link
-                className={styles.headLink}
+                className={styles.headLink2}
                 href={`/${item.href}`}
                 onMouseOver={() => setIndex(item.id)}
               >

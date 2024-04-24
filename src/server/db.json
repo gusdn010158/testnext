@@ -302,21 +302,27 @@
       "name": "LG전자",
       "img": "https://image.ohou.se/i/bucketplace-v2-development/uploads/productions/168429989971225448.jpg?gif=1&w=640&h=640&c=c&webp=1",
       "text": "LG 디오스 식기세척기 오브제컬렉션 DUBJ2EAL",
-      "price": "1,078,000"
+      "price": "1,078,000",
+      "title": "LG 디오스 식기세척기 오브제컬렉션 DUBJ2EAL",
+      "txt": "LG전자"
     },
     {
       "id": 12,
       "name": "한샘",
       "img": "https://image.ohou.se/i/bucketplace-v2-development/uploads/productions/165882516717645937.jpg?gif=1&w=640&h=640&c=c&webp=1",
       "text": "한샘몰pick티렌토 리세 아쿠아텍스 3인용 패브릭 소파 3colors",
-      "price": "282,900"
+      "price": "282,900",
+      "title": "한샘몰pick티렌토 리세 아쿠아텍스 3인용 패브릭 소파 3colors",
+      "txt": "한샘"
     },
     {
       "id": 13,
       "name": "오가든",
       "img": "https://image.ohou.se/i/bucketplace-v2-development/uploads/productions/169337295993617299.png?gif=1&w=640&h=640&c=c&webp=1",
       "text": "몬스테라 오늘의가든 사은품용 비매품",
-      "price": "100,000"
+      "price": "100,000",
+      "title": "몬스테라 오늘의가든 사은품용 비매품",
+      "txt": "오가든"
     },
     {
       "id": 14,
@@ -352,27 +358,32 @@
     },
     {
       "id": 21,
+
       "img": "https://image.ohou.se/i/bucketplace-v2-development/uploads/projects/cover_images/168575585272673089.jpg?w=360&h=240&c=c",
       "title": "누수? 이참에 바꾸자! 원목의 고급스러움이 묻어나는 집으로"
     },
     {
       "id": 22,
+
       "img": "https://image.ohou.se/i/bucketplace-v2-development/uploads/projects/cover_images/168610348946587219.jpg?w=360&h=240&c=c",
       "title": "버려지는 공간 하나 없이, 작은 미술관 같은 단독주택"
     },
 
     {
       "id": 23,
+      "txt": "예나디자인",
       "img": "https://image.ohou.se/i/bucketplace-v2-development/uploads/cards/expert_reviews/170588082462464511.jpg?w=1280&q=80&webp=1",
       "title": "예나디자인결혼하고 첫집에서 다음집으로 이사를 계획하면서 매매를 하게되었고 평소 SNS에서만 보던 내가 구상한 나의오늘의집에 인테리어 금액자체가  "
     },
     {
       "id": 24,
+      "txt": "홈 루덴스",
       "img": "https://image.ohou.se/i/bucketplace-v2-development/uploads/cards/expert_reviews/170847788288990712.jpg?w=1280&q=80&webp=1",
       "title": "홈 루덴스처음 상담부터 꼼꼼하고 친절하셨어요, 제가 2베이 아파트에서 냉장고에 김치냉장고까지 있는 상황에서 넓은 테리어 팀장"
     },
     {
       "id": 25,
+      "txt": "가우디 디자인",
       "img": "https://image.ohou.se/i/bucketplace-v2-development/uploads/cards/expert_reviews/170688711793777188.JPG?w=360&q=80&webp=1",
       "title": "가우디 디자인인터넷에서 보고 계약 한 업체가 처음 계약과 다르게 자꾸 이런 저런 핑계로 금액을 많이 올려서 계약을 중도 해지하고, 오늘의 집을 통이 정"
     }
