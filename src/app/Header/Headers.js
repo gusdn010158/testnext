@@ -6,10 +6,12 @@ import { FaCartShopping } from "react-icons/fa6";
 import api from "@/services/api";
 import HeaderBest from "./HeaderBest";
 import { BiChevronDown } from "react-icons/bi";
+
 function Headers() {
   const url = "http://localhost:3001/Header";
   const Header = api(url);
   const [index, setIndex] = useState(1);
+
   useEffect(() => {
     // 페이지가 처음으로 렌더링될 때 index를 1로 설정하여 id가 1인 컴포넌트를 보여줌
     setIndex(1);
@@ -20,14 +22,14 @@ function Headers() {
         <div className={styles.header}>
           <div className={styles.headlogo}>
             <h2>
-              <Link className={styles.headLink} href="/">
+              <Link className={`${styles.headLink} font-roboto`} href="/">
                 오늘의 집
               </Link>
             </h2>
 
             {Header.map((item) => (
               <Link
-                className={styles.headLink2}
+                className={`${styles.headLink2} font-noto_sans_kr`}
                 href={`/${item.href}`}
                 onMouseOver={() => setIndex(item.id)}
               >
@@ -65,7 +67,7 @@ function Headers() {
         </div>
       </div>
       <div className={styles.headerbt}>
-        <div className={styles.btleft}>
+        <div className={`${styles.btleft}  font-noto_sans_kr`}>
           {Header.filter((item) => index === item.id).map((item) => (
             <>
               <Link href="/">{item.one}</Link>

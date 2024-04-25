@@ -5,6 +5,7 @@ import styled from "styled-components";
 import { BiChevronDown } from "react-icons/bi";
 import { CgSearch } from "react-icons/cg";
 import { BiChevronUp } from "react-icons/bi";
+import { FiPhone } from "react-icons/fi";
 function Customer() {
   const url = "http://localhost:3001/Customer";
 
@@ -21,26 +22,46 @@ function Customer() {
     <Custom>
       <Ctop>
         <Ctoplf>
-          <h2>무엇을 도와드릴까요?</h2>
-          <div>배송은 얼마나 걸리나요?</div>
-          <div>주문 취소는 어떻게 하나요?</div>
-          <div>제품의 자세한 정보를 알고 싶어요.</div>
-          <div>제품이 불량일 때는?</div>
-          <div>카카오 계정으로 로그인하면 이미 가입되었다고 합니다.</div>
+          <h2 className="font-noto_sans_kr">무엇을 도와드릴까요?</h2>
+          <div>
+            <Cspan>Q</Cspan>배송은 얼마나 걸리나요?
+          </div>
+          <div>
+            {" "}
+            <Cspan>Q</Cspan>주문 취소는 어떻게 하나요?
+          </div>
+          <div>
+            {" "}
+            <Cspan>Q</Cspan>제품의 자세한 정보를 알고 싶어요.
+          </div>
+          <div>
+            {" "}
+            <Cspan>Q</Cspan>제품이 불량일 때는?
+          </div>
+          <div>
+            {" "}
+            <Cspan>Q</Cspan>카카오 계정으로 로그인하면 이미 가입되었다고 합니다.
+          </div>
         </Ctoplf>
         <Ctoprt>
-          <h3>고객센터 09:00 ~ 18:00 </h3>
+          <h3 className="font-noto_sans_kr">
+            <Ctoprtspan>고객센터</Ctoprtspan> 09:00 ~ 18:00{" "}
+          </h3>
           <li>평일: 전체 문의 상담</li>
           <li>
             토요일, 공휴일: 오늘의집 직접배송, 이사/시공/제품설치 문의 상담{" "}
           </li>
           <li>일요일: 휴무</li>
-          <h3>1670-0876</h3>
+          <h3>
+            {" "}
+            <FiPhone />
+            1670-0876
+          </h3>
           <Btndiv>
             <Topbtn>1:1 카톡 상담하기</Topbtn>
             <Bt>
               <Btbtn>이메일 문의하기</Btbtn>
-              <Btbtn>이메일 주소 복사하기</Btbtn>
+              <Btbtn2>이메일 주소 복사하기</Btbtn2>
             </Bt>
           </Btndiv>
         </Ctoprt>
@@ -56,7 +77,7 @@ function Customer() {
             <div key={item.id}>
               <Btncompo onClick={() => handleOpen(item.id)}>
                 <Compo>
-                  <CgSearch />
+                  <Cspan>Q</Cspan>
                   {item.text}
                 </Compo>
                 <Combtn>
@@ -73,17 +94,27 @@ function Customer() {
 }
 
 export default Customer;
+const Ctoprtspan = styled.span`
+  color: black;
+`;
+const Cspan = styled.span`
+  padding: 5px 7px 5px 7px;
+  margin-right: 10px;
+  border-radius: 50%;
+  color: skyblue;
+  border: 1px solid rgb(240, 240, 240);
+`;
 const Compopen = styled.div`
   display: flex;
   flex-wrap: wrap;
   max-width: 960px;
   padding: 20px;
   border-radius: 5px;
-  background-color: rgb(219, 219, 219);
+  background-color: rgb(240, 240, 240);
   height: auto;
 `;
 const Btncompo = styled.button`
-  border-bottom: 1px solid rgb(219, 219, 219);
+  border-bottom: 1px solid rgb(240, 240, 240);
   border-top: none;
   border-right: none;
   border-left: none;
@@ -131,6 +162,15 @@ const Btbtn = styled.button`
   height: 40px;
   border-radius: 5px;
   border: none;
+  color: skyblue;
+  border: 1px solid skyblue;
+`;
+const Btbtn2 = styled.button`
+  width: 48%;
+  height: 40px;
+  border-radius: 5px;
+  border: none;
+  border: 1px solid rgb(200, 200, 200);
 `;
 const Custom = styled.div`
   display: flex;
@@ -155,8 +195,16 @@ const Ctoprt = styled.div`
   width: 400px;
   height: 300px;
   padding: 30px;
-  background-color: rgb(219, 219, 219);
+  background-color: rgb(240, 240, 240);
+  li {
+    font-size: 12px;
+    color: gray;
+  }
+  h3 {
+    color: skyblue;
+  }
 `;
+
 const Cbt = styled.div`
   display: flex;
   align-items: center;
@@ -169,7 +217,7 @@ const CbtTop = styled.div`
   margin: 50px 0px 50px 0px;
 `;
 const CbtTopsp = styled.span`
-  background-color: rgb(219, 219, 219);
+  background-color: rgb(240, 240, 240);
   border-radius: 25px;
   padding: 10px;
   margin-left: 20px;

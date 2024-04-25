@@ -2,3 +2,10 @@ body {
   margin: 0;
   text-decoration: none;
 }
+.font-roboto {
+  font-family: var(--font-roboto);
+}
+
+.font-noto_sans_kr {
+  font-family: var(--font-noto_sans_kr);
+}

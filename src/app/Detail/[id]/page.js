@@ -10,11 +10,13 @@ import { DiHtml53DEffects } from "react-icons/di";
 import { IoMdStar } from "react-icons/io";
 import { BsBookmark } from "react-icons/bs";
 import { BsFillShareFill } from "react-icons/bs";
+
 function page(props) {
   const url = `http://localhost:3001/test`;
   const test = api(url);
   const [index, setIndex] = useState(0);
   const [open, setOpen] = useState(null);
+
   const handleOpen = () => {
     setOpen(!open);
   };

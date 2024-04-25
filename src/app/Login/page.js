@@ -7,3 +7,17 @@ export const page = () => {
   );
 };
 export default page;
+
+// import React from "react";
+// import RootLayout from "../layout";
+
+// import styles from "./Login.module.css";
+// const Page = () => {
+//   return (
+//     <RootLayout withHeaderAndFooter={false}>
+//       <div className={styles.Login}></div>
+//     </RootLayout>
+//   );
+// };
+
+// export default Page;
