@@ -22,7 +22,7 @@ function Titleslick() {
   return (
     <StyledSlider {...settings}>
       {datastore.map((item) => (
-        <S>
+        <S key={item.id}>
           <Sdiv>{item.name}</Sdiv>
         </S>
       ))}

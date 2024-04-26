@@ -12,6 +12,7 @@ function StoreMain({ first, last, itemWidth, itemheight }) {
     <div className={styles.storeflex}>
       {store.map((m) => (
         <Link
+          key={m.id}
           href={`/Detail/${m.id}`}
           className={styles.storeitem}
           style={{ width: itemWidth, height: itemheight }}

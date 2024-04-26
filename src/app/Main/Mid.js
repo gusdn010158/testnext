@@ -10,7 +10,11 @@ function Mid({ last, first, itemWidth }) {
   return (
     <div className={styles.Midentire}>
       {data.map((item) => (
-        <div className={styles.Midcontents} style={{ width: itemWidth }}>
+        <div
+          className={styles.Midcontents}
+          style={{ width: itemWidth }}
+          key={item.id}
+        >
           <div className={styles.Midimgdiv}>
             <img className={styles.Midimg} alt="12" src={item.img} />
           </div>

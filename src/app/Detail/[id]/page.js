@@ -26,8 +26,9 @@ function page(props) {
   }, []);
 
   const selectedTestData = test.find(
-    (item) => item.id === parseInt(props.params.id)
+    (item) => item.id == parseInt(props.params.id)
   );
+
   return (
     <div className={styles.detail}>
       <div className={styles.detailin}>

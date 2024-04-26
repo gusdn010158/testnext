@@ -72,19 +72,19 @@
   padding-right: 350px;
   justify-content: space-between;
 }
-.btleft {
+.btleft1 {
   display: flex;
   width: 900px;
   justify-content: space-around;
 }
-.btleft > a {
+.btleft1 > a {
   font-weight: 600;
   color: black;
   font-size: 15px;
   text-decoration: none;
 }
 
-.btleft > a:hover {
+.btleft1 > a:hover {
   color: skyblue;
 }
 .btright {

@@ -9,7 +9,7 @@ function Storesmall({ first, last, itemWidth, itemHeight }) {
   return (
     <div className={styles.stitem}>
       {slicedData.map((m) => (
-        <div className={styles.sti}>
+        <div className={styles.sti} key={m.id}>
           <img
             className={styles.sticon}
             src={m.img}
@@ -23,4 +23,3 @@ function Storesmall({ first, last, itemWidth, itemHeight }) {
 }
 
 export default Storesmall;
-//props를 이용해서 데이터를 다르게 보여주는 방법 찾아보기

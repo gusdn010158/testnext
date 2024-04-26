@@ -10,11 +10,10 @@ import { BiChevronDown } from "react-icons/bi";
 function Headers() {
   const url = "http://localhost:3001/Header";
   const Header = api(url);
-  const [index, setIndex] = useState(1);
-
+  const [index, setIndex] = useState(null);
   useEffect(() => {
-    // 페이지가 처음으로 렌더링될 때 index를 1로 설정하여 id가 1인 컴포넌트를 보여줌
-    setIndex(1);
+    // 페이지가 처음으로 렌더링될 때 index를 특정 id 값으로 설정하여 해당 id에 해당하는 컴포넌트를 보여줌
+    setIndex(1); // 여기를 특정 id 값으로 변경하세요
   }, []);
   return (
     <>
@@ -29,6 +28,7 @@ function Headers() {
 
             {Header.map((item) => (
               <Link
+                key={item.id}
                 className={`${styles.headLink2} font-noto_sans_kr`}
                 href={`/${item.href}`}
                 onMouseOver={() => setIndex(item.id)}
@@ -67,9 +67,12 @@ function Headers() {
         </div>
       </div>
       <div className={styles.headerbt}>
-        <div className={`${styles.btleft}  font-noto_sans_kr`}>
-          {Header.filter((item) => index === item.id).map((item) => (
-            <>
+        <div>
+          {Header.filter((item) => index == item.id).map((item) => (
+            <div
+              className={`${styles.btleft1}  font-noto_sans_kr`}
+              key={item.id}
+            >
               <Link href="/">{item.one}</Link>
               <Link href="/">{item.two}</Link>
               <Link href="/">{item.three}</Link>
@@ -81,9 +84,10 @@ function Headers() {
               <Link href="/">{item.nine}</Link>
               <Link href="/">{item.ten}</Link>
               <Link href="/">{item.tenone}</Link>
-            </>
+            </div>
           ))}
         </div>
+
         <div className={styles.btright}>
           <HeaderBest first={1} last={10} />
         </div>
