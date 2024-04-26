@@ -5,7 +5,15 @@ body {
 .font-roboto {
   font-family: var(--font-roboto);
 }
+.font-roboto-400 {
+  --font-roboto: "Roboto", sans-serif;
+  font-weight: 400;
+}
 
+.font-roboto-700 {
+  --font-roboto: "Roboto", sans-serif;
+  font-weight: 700;
+}
 .font-noto_sans_kr {
   font-family: var(--font-noto_sans_kr);
 }

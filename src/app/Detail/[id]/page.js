@@ -56,7 +56,7 @@ function page(props) {
           <div className={styles.dright}>
             <div className={styles.drightdd}> {selectedTestData.company}</div>
             <div className={styles.drtitle}>
-              <h3>{selectedTestData.title}</h3>
+              <h3 className="font-roboto-700">{selectedTestData.title}</h3>
               <span>
                 <BsBookmark />
                 <BsFillShareFill />
@@ -177,11 +177,11 @@ function page(props) {
               </div>
               <div className={styles.drbottombt}>
                 <div className={styles.drbottomtop}>
-                  <p>주문 금액</p>
-                  <h2>0원</h2>
+                  <p className="font-roboto-400">주문 금액</p>
+                  <h2 className="font-roboto-700">0원</h2>
                 </div>
                 <div className={styles.drbottombt_coupon}>
-                  <p>받지 않은 쿠폰이 더 있어요</p>
+                  <p className="font-roboto-400">받지 않은 쿠폰이 더 있어요</p>
                   <div>
                     쿠폰받기 <AiOutlineDownload />
                   </div>

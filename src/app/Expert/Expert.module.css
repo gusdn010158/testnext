@@ -2,7 +2,7 @@
   display: Flex;
   justify-content: center;
   padding-top: 100px;
-  background-color: rgb(212, 212, 212);
+  background-color: rgb(235, 234, 234);
   height: 100vh;
 }
 .expert {
@@ -18,10 +18,15 @@
 .expert1 {
   width: 90%;
   height: 50px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
   border: 1px solid rgb(192, 192, 192);
   border-radius: 10px;
 }
 .button {
+  font-weight: 600;
+  font-size: 20px;
   width: 90%;
   height: 70px;
   background-color: rgb(9, 127, 224);

@@ -9,7 +9,9 @@ function page() {
         alt="img"
         src="https://image.ohou.se/i/bucketplace-v2-development/uploads/assets/163703569663018673.png"
       />
-      <CartLink href="/Store">상품 담으러 가기</CartLink>
+      <CartLink className="font-roboto-400" href="/Store">
+        상품 담으러 가기
+      </CartLink>
     </Cart>
   );
 }

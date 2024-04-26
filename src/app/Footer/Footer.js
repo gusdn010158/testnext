@@ -3,7 +3,7 @@ import styles from "../Footer/Footer.module.css";
 function Footer(props) {
   return (
     <div className={styles.foot}>
-      <div className={styles.footin}>
+      <div className={`${styles.footin} font-roboto-400`}>
         <h3>고객센터</h3>
         <h3>1670-0876 09:00 ~ 18:00</h3>
         <li>평일: 전체 문의 상담 </li>
@@ -14,7 +14,7 @@ function Footer(props) {
           <button>이메일 문의</button>
         </div>
       </div>
-      <div className={styles.footin2}>
+      <div className={`${styles.footin2} font-roboto-400`}>
         <div>회사소개</div>
         <div>채용정보</div>
         <div>이용약관</div>
@@ -28,7 +28,7 @@ function Footer(props) {
         <div>상품광고 소개</div>
         <div>고객의 소리</div>
       </div>
-      <div className={styles.footin3}>
+      <div className={`${styles.footin3} font-roboto-400`}>
         <div>
           (주)버킷플레이스|대표이사 이승재|서울 서초구 서초대로74길 4
           삼성생명서초타워 25층, 27층|contact@bucketplace.net|사업자등록번호

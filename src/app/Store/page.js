@@ -58,7 +58,7 @@ function page() {
         <div>
           <div className={styles.Midtop}>
             <div>
-              <h3>오늘의 딜</h3>
+              <h3 className="font-roboto-700">오늘의 딜</h3>
             </div>
             <Link href="/">더보기</Link>
           </div>
@@ -69,7 +69,7 @@ function page() {
         <div className={styles.slickst}>
           <div className={styles.Midtop}>
             <div>
-              <h3>카테고리</h3>
+              <h3 className="font-roboto-700">카테고리</h3>
             </div>
           </div>
           <Slick settings={set} slides={data2} sliderImgStyle={setImgStyle} />
@@ -77,8 +77,8 @@ function page() {
         <div className={styles.storein2}>
           <div className={styles.Midtop}>
             <div>
-              <h3>인기 상품</h3>
-              <div>배송</div>
+              <h3 className="font-roboto-700">인기 상품</h3>
+              <div className="font-roboto-400">배송</div>
             </div>
             <Link href="/">인기순</Link>
           </div>

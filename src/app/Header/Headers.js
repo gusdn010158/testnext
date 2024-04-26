@@ -21,7 +21,7 @@ function Headers() {
         <div className={styles.header}>
           <div className={styles.headlogo}>
             <h2>
-              <Link className={`${styles.headLink} font-roboto`} href="/">
+              <Link className={styles.headLink} href="/">
                 오늘의 집
               </Link>
             </h2>
@@ -29,7 +29,7 @@ function Headers() {
             {Header.map((item) => (
               <Link
                 key={item.id}
-                className={`${styles.headLink2} font-noto_sans_kr`}
+                className={styles.headLink2}
                 href={`/${item.href}`}
                 onMouseOver={() => setIndex(item.id)}
               >
@@ -44,18 +44,21 @@ function Headers() {
               <FaCartShopping />
             </Link>
             <Link
-              className={styles.headLink}
+              className={`${styles.headLink} font-roboto-400`}
               href="https://ohou.se/users/sign_in?redirect_to=%2Fcart"
             >
               로그인
             </Link>
             <Link
-              className={styles.headLink}
+              className={`${styles.headLink} font-roboto-400`}
               href="https://ohou.se/normal_users/new"
             >
               회원가입
             </Link>
-            <Link className={styles.headLink} href="/Customer">
+            <Link
+              className={`${styles.headLink} font-roboto-400`}
+              href="/Customer"
+            >
               고객 센터
             </Link>
 

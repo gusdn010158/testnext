@@ -1,4 +1,3 @@
-// SlickUIComponent.js
 import React, { useState } from "react";
 import api from "@/services/api";
 import Slider from "react-slick";
@@ -46,12 +45,15 @@ const SlickUIComponent = ({ first, last }) => {
       {toast === true && (
         <div className={styles.toast} onClick={onClick}>
           <div className={styles.toasth2}>
-            <h3>인기 검색어</h3>
+            <h3 className={styles.toasth2d}>인기 검색어</h3>
             <AiOutlineUp />
           </div>
           {headerbt.map((m) => (
             <div className={styles.toasttop} key={m.id}>
-              {m.id} {m.name}
+              <span className={`${styles.toasttopspan} font-roboto-700`}>
+                {m.id}
+              </span>
+              {m.name}
             </div>
           ))}
         </div>

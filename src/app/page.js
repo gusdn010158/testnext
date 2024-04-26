@@ -8,7 +8,7 @@ import Mid from "./Main/Mid";
 import Storesmall from "./Store/Storesmall";
 import SlickComponent from "@/libs/Slick";
 import StoreMain from "./Store/StoreMain";
-import Titleslick from "./Titleslick";
+import Titleslick from "../libs/Titleslick";
 
 export default function Home() {
   const url = "http://localhost:3001/MainSide";
@@ -93,10 +93,14 @@ export default function Home() {
         <div className={styles.mainct}>
           <div className={styles.Midtop}>
             <div>
-              <h3>이런 사진을 찾고 있나요?</h3>
-              <div>좋아하실 만한 인테리어 콘텐츠를 추천해드려요</div>
+              <h3 className="font-roboto-700">이런 사진을 찾고 있나요?</h3>
+              <div className="font-roboto-400">
+                좋아하실 만한 인테리어 콘텐츠를 추천해드려요
+              </div>
             </div>
-            <Link href="/">더보기</Link>
+            <Link className="font-roboto-700" href="/">
+              더보기
+            </Link>
           </div>
           <SlickComponent
             settings={sett}
@@ -107,16 +111,22 @@ export default function Home() {
 
         <div className={styles.Mid}>
           <div className={styles.Midtop}>
-            <h3>40평대 맞나요? 정말 잘 꾸몄어요😮</h3>
-            <Link href="/">더보기</Link>
+            <h3 className="font-roboto-700">
+              40평대 맞나요? 정말 잘 꾸몄어요😮
+            </h3>
+            <Link className="font-roboto-700" href="/">
+              더보기
+            </Link>
           </div>
           <div className={styles.ctitem}>
             <Mid first={17} last={20} />
           </div>
 
           <div className={styles.Midtop}>
-            <h3>봄이 왔어요🌸 베란다 개방 시작!</h3>
-            <Link href="/">더보기</Link>
+            <h3 className="font-roboto-700">봄이 왔어요🌸 베란다 개방 시작!</h3>
+            <Link className="font-roboto-700" href="/">
+              더보기
+            </Link>
           </div>
           <div className={styles.ctitem}>
             <Mid first={17} last={20} />

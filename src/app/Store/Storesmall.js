@@ -7,7 +7,7 @@ function Storesmall({ first, last, itemWidth, itemHeight }) {
 
   const slicedData = smalldata.slice(first - 1, last);
   return (
-    <div className={styles.stitem}>
+    <div className={`${styles.stitem} font-roboto-400`}>
       {slicedData.map((m) => (
         <div className={styles.sti} key={m.id}>
           <img

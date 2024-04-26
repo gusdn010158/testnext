@@ -8,7 +8,7 @@ function Mid({ last, first, itemWidth }) {
   const data = datastore.slice(first - 1, last);
 
   return (
-    <div className={styles.Midentire}>
+    <div className={`${styles.Midentire} font-roboto-400`}>
       {data.map((item) => (
         <div
           className={styles.Midcontents}
