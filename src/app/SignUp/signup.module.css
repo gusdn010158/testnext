@@ -1,0 +1,92 @@
+.signup {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  margin-top: 70px;
+}
+.signuplogo {
+  width: 350px;
+  height: 70px;
+}
+.signuptop {
+  width: 350px;
+  height: 150px;
+  display: Flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  border-bottom: 1px solid rgb(196, 196, 196);
+}
+.signuptoplogo {
+  object-fit: cover;
+  width: 90px;
+  height: 30px;
+  position: absolute;
+  left: 20px;
+  top: 50px;
+}
+.signupmid {
+  width: 350px;
+}
+.signuptoplogo2 img {
+  object-fit: cover;
+
+  margin: 20px;
+  border-radius: 45%;
+  width: 50px;
+  height: 50px;
+}
+.signupinput {
+  width: 100%;
+  height: 35px;
+  border: 1px solid rgb(167, 167, 167);
+  border-radius: 5px;
+}
+.signupinput1 {
+  width: 46%;
+  height: 35px;
+  border: 1px solid rgb(167, 167, 167);
+  border-radius: 5px;
+}
+.signupinput2 {
+  width: 47%;
+  height: 40px;
+  border: 1px solid rgb(167, 167, 167);
+  border-radius: 5px;
+}
+.signuptxt {
+  color: gray;
+  font-size: 13px;
+  margin-bottom: 10px;
+}
+.signupbutton {
+  width: 100%;
+  font-weight: 600;
+  color: white;
+  font-size: 18px;
+  background-color: skyblue;
+  height: 50px;
+  border: 0;
+  border-radius: 5px;
+}
+.signupbutton1 {
+  margin-top: 10px;
+  width: 100%;
+  font-weight: 600;
+  color: rgb(116, 116, 116);
+  font-size: 18px;
+  background-color: rgb(219, 219, 219);
+  height: 50px;
+  border: 0;
+  border-radius: 5px;
+}
+.signupbt {
+  display: flex;
+  height: 50px;
+  align-items: center;
+  justify-content: center;
+  color: black;
+}

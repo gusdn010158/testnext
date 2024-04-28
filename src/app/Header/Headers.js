@@ -47,7 +47,8 @@ function Headers() {
             <Link className={styles.headLink} href="/Cart">
               <FaCartShopping />
             </Link>
-            {/* "https://ohou.se/users/sign_in?redirect_to=%2Fcart" */}
+            {/* "https://ohou.se/users/sign_in?redirect_to=%2Fcart" 
+             href="https://ohou.se/normal_users/new"*/}
             <Link
               className={`${styles.headLink} font-roboto-400`}
               href="/Login"
@@ -56,7 +57,7 @@ function Headers() {
             </Link>
             <Link
               className={`${styles.headLink} font-roboto-400`}
-              href="https://ohou.se/normal_users/new"
+              href="/SignUp"
             >
               회원가입
             </Link>
