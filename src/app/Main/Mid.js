@@ -20,7 +20,7 @@ function Mid({ last, first, itemWidth }) {
           </div>
           <div className={styles.Midtitle}>
             <div className={styles.Midtitled}>{item.txt}</div>
-            <div>{item.title}</div>
+            <div className="font-roboto-400">{item.title}</div>
           </div>
         </div>
       ))}

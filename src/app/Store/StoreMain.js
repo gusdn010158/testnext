@@ -22,7 +22,9 @@ function StoreMain({ first, last, itemWidth, itemheight }) {
           </div>
           <div className={styles.storetitle}>
             <div className={styles.storetitle1}>{m.name}</div>
-            <div className={styles.storetitle2}>{m.text}</div>
+            <div className={`${styles.storetitle2} font-roboto-400`}>
+              {m.text}
+            </div>
             <div className={styles.storetitle3}>{m.price}</div>
             <div className={styles.emr}>특가</div>
             <div className={styles.gkf}>무료배송</div>

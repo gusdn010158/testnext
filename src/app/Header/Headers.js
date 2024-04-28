@@ -22,7 +22,11 @@ function Headers() {
           <div className={styles.headlogo}>
             <h2>
               <Link className={styles.headLink} href="/">
-                오늘의 집
+                <img
+                  className={styles.headLinklogo}
+                  src="https://blog.kakaocdn.net/dn/eyPIsT/btqBO74U3Ky/jNO3yCYab0xoG7w4VsAiAk/img.jpg"
+                  alt="main"
+                />
               </Link>
             </h2>
 
@@ -43,9 +47,10 @@ function Headers() {
             <Link className={styles.headLink} href="/Cart">
               <FaCartShopping />
             </Link>
+            {/* "https://ohou.se/users/sign_in?redirect_to=%2Fcart" */}
             <Link
               className={`${styles.headLink} font-roboto-400`}
-              href="https://ohou.se/users/sign_in?redirect_to=%2Fcart"
+              href="/Login"
             >
               로그인
             </Link>
