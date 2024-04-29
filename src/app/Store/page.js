@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import Slick from "@/libs/Slick";
-
+import Slick2 from "@/libs/Slick2";
 import api from "@/services/api";
 import styles from "../Store/store.module.css";
 import Storesmall from "./Storesmall";
@@ -27,23 +27,6 @@ function page() {
     pauseOnHover: true,
   };
 
-  const url2 = "http://localhost:3001/mainitem";
-
-  const data2 = api(url2);
-  const set = {
-    infinite: true,
-    speed: 1000, // 넘어가는 속도 (ms)
-    autoplay: true, // 자동 넘김 활성화
-    autoplaySpeed: 5000, // 자동 넘김 속도 (ms)
-    slidesToShow: 10,
-    slidesToScroll: 5,
-    arrows: true,
-    pauseOnHover: true,
-  };
-  const setImgStyle = {
-    height: "70px",
-    width: "70px",
-  };
   return (
     <div className={styles.store}>
       <Slick
@@ -54,7 +37,7 @@ function page() {
 
       <div className={styles.storein}>
         <div className={styles.storein1}>
-          <Storesmall first={1} last={10} />
+          <Storesmall first={11} last={20} itemWidth="70px" itemHeight="60px" />
         </div>
         <div>
           <div className={styles.Midtop}>
@@ -73,7 +56,7 @@ function page() {
               <h3 className="font-roboto-700">카테고리</h3>
             </div>
           </div>
-          <Slick settings={set} slides={data2} sliderImgStyle={setImgStyle} />
+          <Slick2 />
         </div>
         <div className={styles.storein2}>
           <div className={styles.Midtop}>

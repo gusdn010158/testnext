@@ -98,9 +98,8 @@
   font-weight: 600;
 }
 .sticon {
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: inherit;
+  border-radius: 25px;
+  object-fit: cover;
   width: 120px;
   height: 100px;
 }

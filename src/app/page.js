@@ -9,7 +9,7 @@ import Storesmall from "./Store/Storesmall";
 import SlickComponent from "@/libs/Slick";
 import StoreMain from "./Store/StoreMain";
 import Titleslick from "../libs/Titleslick";
-
+import Slick2 from "@/libs/Slick2";
 export default function Home() {
   const url = "http://localhost:3001/MainSide";
   const data = api(url);
@@ -48,25 +48,7 @@ export default function Home() {
 
     pauseOnHover: true,
   };
-  ////////////////////////////////////////////
-  const url2 = "http://localhost:3001/mainitem";
 
-  const data2 = api(url2);
-
-  const set = {
-    infinite: true,
-    speed: 1000, // 넘어가는 속도 (ms)
-    autoplay: true, // 자동 넘김 활성화
-    autoplaySpeed: 5000, // 자동 넘김 속도 (ms)
-    slidesToShow: 10,
-    slidesToScroll: 5,
-    arrows: true,
-    pauseOnHover: true,
-  };
-  const setImgStyle = {
-    height: "70px",
-    width: "70px",
-  };
   return (
     <div className={styles.main}>
       <div className={styles.maincom}>
@@ -135,11 +117,7 @@ export default function Home() {
             <h3>카테고리별 상품 찾기</h3>
           </div>
           <div className={styles.mainitem}>
-            <SlickComponent
-              settings={set}
-              slides={data2}
-              sliderImgStyle={setImgStyle}
-            />
+            <Slick2 />
           </div>
           <div className={styles.Midtop}>
             <h3>오늘의딜</h3>

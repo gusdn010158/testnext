@@ -51,6 +51,56 @@
       "img": "https://image.ohou.se/i/bucketplace-v2-development/uploads/shortcut/home_feed_shortcut_sets/167198021046015480.png?w=144"
     },
     {
+      "id": 11,
+      "name": "가정의 달",
+      "img": "https://image.ohou.se/image/resize/bucketplace-v2-development/uploads-shortcut-store_home_shortcut_sets-171393600554666847.png/512/none"
+    },
+    {
+      "id": 12,
+      "name": "BEST",
+      "img": "https://image.ohou.se/image/resize/bucketplace-v2-development/uploads-shortcut-store_home_shortcut_sets-169254392912279857.png/512/none"
+    },
+    {
+      "id": 13,
+      "name": "오늘의 딜",
+      "img": "https://image.ohou.se/image/resize/bucketplace-v2-development/uploads-shortcut-store_home_shortcut_sets-171145477204682016.png/512/none"
+    },
+    {
+      "id": 14,
+      "name": "오픈런딜",
+      "img": "https://image.ohou.se/image/resize/bucketplace-v2-development/uploads-shortcut-store_home_shortcut_sets-170859499611232840.png/512/none"
+    },
+    {
+      "id": 15,
+      "name": "행운출첵",
+      "img": "https://image.ohou.se/image/resize/bucketplace-v2-development/uploads-shortcut-store_home_shortcut_sets-171012070842806654.png/512/none"
+    },
+    {
+      "id": 16,
+      "name": "프리미엄",
+      "img": "https://image.ohou.se/image/resize/bucketplace-v2-development/uploads-shortcut-store_home_shortcut_sets-171151986569872817.png/512/none"
+    },
+    {
+      "id": 17,
+      "name": "초특가견적",
+      "img": "https://image.ohou.se/image/resize/bucketplace-v2-development/uploads-shortcut-store_home_shortcut_sets-171145478507982587.png/512/none"
+    },
+    {
+      "id": 18,
+      "name": "득템찬스",
+      "img": "https://image.ohou.se/image/resize/bucketplace-v2-development/uploads-shortcut-store_home_shortcut_sets-171393607536856679.png/512/none"
+    },
+    {
+      "id": 19,
+      "name": "오!쇼룸",
+      "img": "https://image.ohou.se/image/resize/bucketplace-v2-development/uploads-shortcut-store_home_shortcut_sets-169353225639708707.png/512/none"
+    },
+    {
+      "id": 20,
+      "name": "특가혜택",
+      "img": "https://image.ohou.se/image/resize/bucketplace-v2-development/uploads-shortcut-store_home_shortcut_sets-170078700204485935.png/512/none"
+    },
+    {
       "id": 21,
       "name": "가구",
       "img": "https://image.ohou.se/i/bucketplace-v2-development/uploads/category/store_home_categories/165698403420736265.png?gif=1&w=144&h=144&c=c&webp=1"
