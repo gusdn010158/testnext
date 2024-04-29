@@ -1,5 +1,5 @@
 import React from "react";
-import Slider, { Settings } from "react-slick";
+import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import styled from "styled-components";
@@ -14,6 +14,7 @@ const Slick = ({ settings, slides, sliderImgStyle }) => {
             alt={`Slide ${index}`}
             style={sliderImgStyle}
           />
+          <Sliderdiv>{slide.name}</Sliderdiv>
         </Slidiv>
       ))}
     </StyledSlider>
@@ -58,5 +59,6 @@ const Sliderimg = styled.img`
     height: 120%;
   }
 `;
+const Sliderdiv = styled.div``;
 
 export default Slick;

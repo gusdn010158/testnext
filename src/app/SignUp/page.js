@@ -6,13 +6,13 @@ import Link from "next/link";
 function page() {
   return (
     <RootLayout withHeaderAndFooter={false}>
-      <Link href="/">
+      <a href="/">
         <img
           className={styles.signuptoplogo}
           alt="logo"
           src="https://ohstory.io/wp-content/uploads/2022/11/1_-Ohouse_mark_horizontal_black.png"
         ></img>
-      </Link>
+      </a>
       <div className={styles.signup}>
         <div className={styles.signuplogo}>
           {" "}

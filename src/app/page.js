@@ -28,7 +28,7 @@ export default function Home() {
     height: "510px",
     width: "100%",
   };
-
+  /////////////////////////////////////////////
   const cturl = "http://localhost:3001/ctitem";
 
   const ctdata = api(cturl);
@@ -42,13 +42,13 @@ export default function Home() {
   var sett = {
     arrows: true,
 
-    slidesToScroll: 1,
+    slidesToScroll: 2,
     slidesToShow: 6,
     speed: 500,
 
     pauseOnHover: true,
   };
-
+  ////////////////////////////////////////////
   const url2 = "http://localhost:3001/mainitem";
 
   const data2 = api(url2);

@@ -14,7 +14,7 @@ function Titleslick() {
     arrows: true,
 
     slidesToScroll: 5,
-    slidesToShow: 12,
+    slidesToShow: 10,
     speed: 500,
 
     pauseOnHover: true,

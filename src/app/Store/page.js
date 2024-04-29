@@ -12,9 +12,6 @@ function page() {
 
   const data = api(url);
 
-  const url2 = "http://localhost:3001/mainitem";
-
-  const data2 = api(url2);
   const sliderImgStyle = {
     height: "400px",
     width: "100%",
@@ -29,6 +26,10 @@ function page() {
     arrows: true,
     pauseOnHover: true,
   };
+
+  const url2 = "http://localhost:3001/mainitem";
+
+  const data2 = api(url2);
   const set = {
     infinite: true,
     speed: 1000, // 넘어가는 속도 (ms)

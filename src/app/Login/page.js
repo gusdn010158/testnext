@@ -1,29 +1,19 @@
-// "use client";
-// import React from "react";
-// import Link from "next/link";
-// export const page = () => {
-//   return (
-//     <Link href="https://ohou.se/users/sign_in?redirect_to=%2Fcart">링크</Link>
-//   );
-// };
-// export default page;
-
 import React from "react";
 import RootLayout from "../layout";
-import Link from "next/link";
+
 import styles from "./Login.module.css";
 const Page = () => {
   return (
     <RootLayout withHeaderAndFooter={false}>
       <div className={styles.Login}>
         <div className={styles.loginflex}>
-          <Link href="/">
+          <a href="/">
             <img
               className={styles.logintoplogo}
               alt="logo"
               src="https://ohstory.io/wp-content/uploads/2022/11/1_-Ohouse_mark_horizontal_black.png"
             ></img>
-          </Link>
+          </a>
           <form className={styles.loginform}>
             <input placeholder="이메일"></input>
             <input placeholder="비밀번호"></input>
