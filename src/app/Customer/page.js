@@ -148,7 +148,7 @@ const Topbtn = styled.button`
   border-radius: 5px;
   margin-bottom: 10px;
   &:hover {
-    background-color: blue;
+    background-color: rgb(51, 131, 163);
   }
 `;
 const Bt = styled.div`

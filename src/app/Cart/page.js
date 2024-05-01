@@ -29,7 +29,7 @@ const CartLink = styled(Link)`
   align-items: center;
   justify-content: center;
   &:hover {
-    background-color: blue;
+    background-color: rgb(51, 131, 163);
   }
 `;
 const Cart = styled.div`

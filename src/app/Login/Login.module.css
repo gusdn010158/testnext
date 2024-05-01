@@ -22,6 +22,7 @@
   display: flex;
   flex-direction: column;
 }
+
 .loginform input {
   height: 50px;
   border-radius: 5px;
@@ -74,13 +75,15 @@
   font-weight: 600;
 }
 .Loginbottom {
+  width: 330px;
   display: Flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
   padding-top: 20px;
   height: 250px;
-  border-top: 1px solid black;
+  border-top: 1px solid rgb(161, 161, 161);
+  transition: transform 0.3s ease;
 }
 .Loginbottomtxt {
   font-size: 10px;

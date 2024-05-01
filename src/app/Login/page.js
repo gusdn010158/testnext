@@ -2,6 +2,7 @@ import React from "react";
 import RootLayout from "../layout";
 
 import styles from "./Login.module.css";
+import Logintoast from "./Logintoast";
 const Page = () => {
   return (
     <RootLayout withHeaderAndFooter={false}>
@@ -46,12 +47,7 @@ const Page = () => {
               로그인에 문제가 있으신가요?
             </div>
           </div>
-          <div className={styles.Loginbottom}>
-            <div>비회원 주문 조회하기</div>
-            <div className={styles.Loginbottomtxt}>
-              © bucketplace, Co., Ltd.. All Rights Reserved
-            </div>
-          </div>
+          <Logintoast />
         </div>
       </div>
     </RootLayout>
