@@ -111,7 +111,7 @@ export default function Home() {
             </Link>
           </div>
           <div className={styles.ctitem}>
-            <Mid first={17} last={20} />
+            <Mid first={24} last={27} />
           </div>
           <div className={styles.Midtop}>
             <h3>카테고리별 상품 찾기</h3>

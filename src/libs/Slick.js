@@ -53,11 +53,8 @@ const Sliderimg = styled.img`
   border-radius: ${(props) => props.style?.borderRadius || "inherit"};
   height: ${(props) => props.style?.height || "auto"};
   width: ${(props) => props.style?.width || "auto"};
+
   width: 100%;
-  :hover {
-    width: 120%;
-    height: 120%;
-  }
 `;
 const Sliderdiv = styled.div``;
 

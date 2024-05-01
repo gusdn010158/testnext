@@ -5,12 +5,14 @@ import Link from "next/link";
 import { FaCartShopping } from "react-icons/fa6";
 import api from "@/services/api";
 import HeaderBest from "./HeaderBest";
-import { BiChevronDown } from "react-icons/bi";
+
+import Headertoast from "./Headertoast";
 
 function Headers() {
   const url = "http://localhost:3001/Header";
   const Header = api(url);
   const [index, setIndex] = useState(null);
+
   useEffect(() => {
     // 페이지가 처음으로 렌더링될 때 index를 특정 id 값으로 설정하여 해당 id에 해당하는 컴포넌트를 보여줌
     setIndex(1); // 여기를 특정 id 값으로 변경하세요
@@ -47,8 +49,7 @@ function Headers() {
             <Link className={styles.headLink} href="/Cart">
               <FaCartShopping />
             </Link>
-            {/* "https://ohou.se/users/sign_in?redirect_to=%2Fcart" 
-             href="https://ohou.se/normal_users/new"*/}
+
             <Link
               className={`${styles.headLink} font-roboto-400`}
               href="/Login"
@@ -67,11 +68,7 @@ function Headers() {
             >
               고객 센터
             </Link>
-
-            <div className={styles.headwrite}>
-              글쓰기
-              <BiChevronDown />
-            </div>
+            <Headertoast />
           </div>
         </div>
       </div>

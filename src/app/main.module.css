@@ -26,24 +26,17 @@
   border-radius: 5px;
   width: 75%;
   height: 100%;
-}
-.mainad1:hover {
-  height: 100%;
-  width: 80%;
   overflow: hidden;
 }
 
 .mainad1img {
+  transition: transform 0.3s ease;
   border-radius: 5px;
   width: 100%;
   height: 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: inherit;
 }
 .mainad1img:hover {
-  width: 110%;
-  height: 110%;
+  transform: scale(1.1);
 }
 
 .mainad2 {
@@ -124,8 +117,9 @@
 .cicon {
   background-color: rgb(202, 202, 202);
   border-radius: 50px;
-  width: 40px;
-  height: 40px;
+  padding: 15px;
+  font-size: 25px;
+  margin-bottom: 10px;
 }
 
 .Midentire {
@@ -147,23 +141,20 @@
   align-items: center;
   width: 100%;
   height: 70%;
-}
-.Midimgdiv:hover {
-  background-color: rgb(255, 255, 255);
   overflow: hidden;
   border-radius: 5px;
 }
 
 .Midimg {
+  transition: transform 0.3s ease;
   border-radius: 5px;
-
   width: 100%;
   height: 100%;
 }
 .Midimg:hover {
-  width: 120%;
-  height: 110%;
+  transform: scale(1.1);
 }
+
 .Midtitle {
   height: 50px;
   display: flex;
