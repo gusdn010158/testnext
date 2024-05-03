@@ -5,6 +5,7 @@ import React from "react";
 import api from "@/services/api";
 import { AiOutlineArrowRight } from "react-icons/ai";
 import Mid from "./Main/Mid";
+
 import Storesmall from "./Store/Storesmall";
 import SlickComponent from "@/libs/Slick";
 import StoreMain from "./Store/StoreMain";

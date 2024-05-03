@@ -17,6 +17,7 @@ function Headers() {
     // 페이지가 처음으로 렌더링될 때 index를 특정 id 값으로 설정하여 해당 id에 해당하는 컴포넌트를 보여줌
     setIndex(1); // 여기를 특정 id 값으로 변경하세요
   }, []);
+
   return (
     <>
       <div className={styles.head}>

@@ -1,6 +1,7 @@
+"use client";
 import React from "react";
 import styles from "../Footer/Footer.module.css";
-function Footer(props) {
+function Footer() {
   return (
     <div className={styles.foot}>
       <div className={`${styles.footin} font-roboto-400`}>
