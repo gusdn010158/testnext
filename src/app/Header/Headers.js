@@ -45,7 +45,7 @@ function Headers() {
             ))}
           </div>
           <div className={styles.headlogin}>
-            <input placeholder="시공 업체 검색" />
+            <input placeholder="쇼핑 검색" />
 
             <Link className={styles.headLink} href="/Cart">
               <FaCartShopping />

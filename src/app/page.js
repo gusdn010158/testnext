@@ -139,7 +139,7 @@ export default function Home() {
             <Link href="/">더보기</Link>
           </div>
           <div className={styles.ctitem1}>
-            <Mid first={11} last={13} itemWidth="33%" />
+            <Mid first={11} last={13} itemWidth="31%" />
             <div className={styles.cticon}>
               <AiOutlineArrowRight className={styles.cicon} />
               <Link href="/" style={{ textDecoration: "none", color: "black" }}>

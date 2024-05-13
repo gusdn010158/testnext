@@ -1,15 +1,21 @@
 "use client";
 import React from "react";
 import styles from "../Footer/Footer.module.css";
+import { BsChevronRight } from "react-icons/bs";
 function Footer() {
   return (
     <div className={styles.foot}>
       <div className={`${styles.footin} font-roboto-400`}>
-        <h3>고객센터</h3>
-        <h3>1670-0876 09:00 ~ 18:00</h3>
-        <li>평일: 전체 문의 상담 </li>
-        <li>토요일, 공휴일: 오늘의집 직접배송, 이사/시공/제품설치 문의 상담</li>
-        <li>일요일: 휴무</li>
+        <h3>
+          고객센터 <BsChevronRight />
+        </h3>
+        <h3 className={styles.fth3}>1670-0876</h3>
+        <div className={styles.ftdiv}>평일: 전체 문의 상담 </div>
+        <div className={styles.ftdiv}>
+          토요일, 공휴일: 오늘의집 직접배송, 이사/시공/제품설치 문의 상담{" "}
+        </div>
+        <div className={styles.ftdiv}>일요일: 휴무 </div>
+
         <div className={styles.footbutton}>
           <button>카톡 상담(평일 09:00~18:00)</button>
           <button>이메일 문의</button>
