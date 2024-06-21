@@ -29,6 +29,13 @@ export default function Home() {
     height: "510px",
     width: "100%",
   };
+
+  const arrowStyle = {
+    left: "-20px",
+    right: "0px",
+    fontSize1: "50px",
+    fontSize2: "50px",
+  };
   /////////////////////////////////////////////
   const cturl = "http://localhost:3001/ctitem";
 
@@ -39,7 +46,12 @@ export default function Home() {
     height: "250px",
     width: "195px",
   };
-
+  const arrowStyle2 = {
+    left: "-25px",
+    right: "0px",
+    fontSize1: "50px",
+    fontSize2: "50px",
+  };
   var sett = {
     arrows: true,
 
@@ -66,6 +78,7 @@ export default function Home() {
               settings={settings}
               slides={data}
               sliderImgStyle={sliderImgStyle}
+              arrowStyle={arrowStyle}
               className={styles.sliderImg}
             />
           </div>
@@ -89,6 +102,7 @@ export default function Home() {
             settings={sett}
             slides={ctdata}
             sliderImgStyle={ctsliderImgStyle}
+            arrowStyle={arrowStyle2}
           />
         </div>
 

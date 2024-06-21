@@ -4,9 +4,9 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import styled from "styled-components";
 
-const Slick = ({ settings, slides, sliderImgStyle }) => {
+const Slick = ({ settings, slides, sliderImgStyle, arrowStyle }) => {
   return (
-    <StyledSlider {...settings}>
+    <StyledSlider {...settings} arrowStyle={arrowStyle}>
       {slides.map((slide, index) => (
         <Slidiv key={index}>
           <Sliderimg
@@ -24,23 +24,30 @@ const Slick = ({ settings, slides, sliderImgStyle }) => {
 const StyledSlider = styled(Slider)`
   .slick-prev {
     z-index: 1;
-    left: 30px;
+    left: ${(props) => props.arrowStyle?.left || "auto"};
+    opacity: 0.1;
   }
 
   .slick-next {
     z-index: 1;
-    right: 40px;
+    right: ${(props) => props.arrowStyle?.right || "auto"};
+    opacity: 0.1;
   }
 
-  .slick-prev:before,
-  .slick-next:before {
-    font-size: 30px;
-    opacity: 0.3;
-    color: black;
-  }
-  .slick-prev:before:hover,
-  .slick-next:before:hover {
+  .slick-next:hover,
+  .slick-prev:hover {
     opacity: 1;
+  }
+  .slick-prev:before {
+    font-size: ${(props) => props.arrowStyle?.fontSize1 || "auto"};
+    color: black;
+    opacity: 0.5;
+  }
+
+  .slick-next:before {
+    font-size: ${(props) => props.arrowStyle?.fontSize2 || "auto"};
+    color: black;
+    opacity: 0.5;
   }
 `;
 const Slidiv = styled.div`

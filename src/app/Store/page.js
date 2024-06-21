@@ -12,6 +12,13 @@ function page() {
 
   const data = api(url);
 
+  const arrowStyle = {
+    left: "400px",
+    right: "400px",
+    fontSize1: "50px",
+    fontSize2: "50px",
+  };
+
   const sliderImgStyle = {
     height: "400px",
     width: "100%",
@@ -33,6 +40,7 @@ function page() {
         settings={settings}
         slides={data}
         sliderImgStyle={sliderImgStyle}
+        arrowStyle={arrowStyle}
       />
 
       <div className={styles.storein}>
