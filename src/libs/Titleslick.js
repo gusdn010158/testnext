@@ -49,22 +49,31 @@ const Sdiv = styled.div`
 const StyledSlider = styled(Slider)`
   .slick-prev {
     z-index: 1;
-    left: 30px;
+    left: -30px;
+    opacity: 0.1;
+    top: 5px;
   }
 
   .slick-next {
     z-index: 1;
-    right: 40px;
+    right: 00px;
+    opacity: 0.1;
+    top: 5px;
   }
 
-  .slick-prev:before,
-  .slick-next:before {
-    font-size: 30px;
-    opacity: 0.3;
-    color: black;
-  }
-  .slick-prev:before:hover,
-  .slick-next:before:hover {
+  .slick-next:hover,
+  .slick-prev:hover {
     opacity: 1;
+  }
+  .slick-prev:before {
+    font-size: 50px;
+    color: black;
+    opacity: 0.5;
+  }
+
+  .slick-next:before {
+    font-size: 50px;
+    color: black;
+    opacity: 0.5;
   }
 `;

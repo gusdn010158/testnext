@@ -33,8 +33,6 @@ export default function Home() {
   const arrowStyle = {
     left: "-20px",
     right: "0px",
-    fontSize1: "50px",
-    fontSize2: "50px",
   };
   /////////////////////////////////////////////
   const cturl = "http://localhost:3001/ctitem";
@@ -49,8 +47,6 @@ export default function Home() {
   const arrowStyle2 = {
     left: "-25px",
     right: "0px",
-    fontSize1: "50px",
-    fontSize2: "50px",
   };
   var sett = {
     arrows: true,
@@ -60,6 +56,9 @@ export default function Home() {
     speed: 500,
 
     pauseOnHover: true,
+  };
+  const arrowStyle3 = {
+    left: "-20px",
   };
 
   return (
@@ -132,7 +131,7 @@ export default function Home() {
             <h3>카테고리별 상품 찾기</h3>
           </div>
           <div className={styles.mainitem}>
-            <Slick2 />
+            <Slick2 arrowStyle={arrowStyle3} />
           </div>
           <div className={styles.Midtop}>
             <h3>오늘의딜</h3>

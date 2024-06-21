@@ -4,7 +4,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import styled from "styled-components";
 import api from "@/services/api";
-const Slick = () => {
+const Slick = ({ arrowStyle }) => {
   const url2 = "http://localhost:3001/mainitem";
   const settings = {
     infinite: true,
@@ -20,7 +20,7 @@ const Slick = () => {
   const data2 = api(url2);
   const store = data2.slice(21, 36);
   return (
-    <StyledSlider {...settings}>
+    <StyledSlider {...settings} arrowStyle={arrowStyle}>
       {store.map((slide, index) => (
         <Slidiv key={index}>
           <Sliderimg src={slide.img} alt={`Slide ${index}`} />
@@ -34,23 +34,32 @@ const Slick = () => {
 const StyledSlider = styled(Slider)`
   .slick-prev {
     z-index: 1;
-    left: 30px;
+    left: ${(props) => props.arrowStyle?.left || "auto"};
+    opacity: 0.1;
+    top: 20px;
   }
 
   .slick-next {
     z-index: 1;
-    right: 40px;
+    right: 0px;
+    opacity: 0.1;
+    top: 20px;
   }
 
-  .slick-prev:before,
-  .slick-next:before {
-    font-size: 30px;
-    opacity: 0.3;
-    color: black;
-  }
-  .slick-prev:before:hover,
-  .slick-next:before:hover {
+  .slick-next:hover,
+  .slick-prev:hover {
     opacity: 1;
+  }
+  .slick-prev:before {
+    font-size: 50px;
+    color: black;
+    opacity: 0.5;
+  }
+
+  .slick-next:before {
+    font-size: 50px;
+    color: black;
+    opacity: 0.5;
   }
 `;
 const Slidiv = styled.div`
@@ -60,8 +69,11 @@ const Slidiv = styled.div`
 `;
 
 const Sliderimg = styled.img`
-  height: 70px;
-  width: 70px;
+  height: 50px;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   :hover {
     width: 120%;
     height: 120%;

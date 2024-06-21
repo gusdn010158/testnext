@@ -15,8 +15,6 @@ function page() {
   const arrowStyle = {
     left: "400px",
     right: "400px",
-    fontSize1: "50px",
-    fontSize2: "50px",
   };
 
   const sliderImgStyle = {
@@ -33,7 +31,10 @@ function page() {
     arrows: true,
     pauseOnHover: true,
   };
-
+  const arrowStyle2 = {
+    //222
+    left: "-30px",
+  };
   return (
     <div className={styles.store}>
       <Slick
@@ -64,7 +65,7 @@ function page() {
               <h3 className="font-roboto-700">카테고리</h3>
             </div>
           </div>
-          <Slick2 />
+          <Slick2 arrowStyle={arrowStyle2} />
         </div>
         <div className={styles.storein2}>
           <div className={styles.Midtop}>

@@ -39,13 +39,13 @@ const StyledSlider = styled(Slider)`
     opacity: 1;
   }
   .slick-prev:before {
-    font-size: ${(props) => props.arrowStyle?.fontSize1 || "auto"};
+    font-size: 50px;
     color: black;
     opacity: 0.5;
   }
 
   .slick-next:before {
-    font-size: ${(props) => props.arrowStyle?.fontSize2 || "auto"};
+    font-size: 50px;
     color: black;
     opacity: 0.5;
   }
