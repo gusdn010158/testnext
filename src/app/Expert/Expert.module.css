@@ -34,3 +34,7 @@
   border: none;
   color: white;
 }
+
+.button:hover {
+  background-color: rgb(7, 75, 131);
+}

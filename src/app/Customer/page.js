@@ -4,6 +4,7 @@ import api from "@/services/api";
 import styled from "styled-components";
 import { BiChevronDown } from "react-icons/bi";
 import { CgSearch } from "react-icons/cg";
+import { Link } from "react-router-dom";
 import { BiChevronUp } from "react-icons/bi";
 import { FiPhone } from "react-icons/fi";
 function Customer() {
@@ -69,7 +70,7 @@ function Customer() {
       <Cbt>
         <CbtTop>
           {ddata.map((item) => (
-            <CbtTopsp> {item.name}</CbtTopsp>
+            <CbtTopsp ref="dd"> {item.name}</CbtTopsp>
           ))}
         </CbtTop>
         <Cbtdiv>
@@ -216,7 +217,7 @@ const CbtTop = styled.div`
   display: flex;
   margin: 50px 0px 50px 0px;
 `;
-const CbtTopsp = styled.span`
+const CbtTopsp = styled(Link)`
   background-color: rgb(240, 240, 240);
   border-radius: 25px;
   padding: 10px;
