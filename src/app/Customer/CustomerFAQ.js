@@ -32,14 +32,15 @@ const CustomerFAQ = ({
         ))}
       </CbtTop>
       <Cbtdiv>
-        {data.map((item) => (
-          <FAQItem
-            key={item.id}
-            item={item}
-            open={open === item.id}
-            handleOpen={() => handleOpen(item.id)}
-          />
-        ))}
+        {Array.isArray(data) &&
+          data.map((item) => (
+            <FAQItem
+              key={item.id}
+              item={item}
+              open={open === item.id}
+              handleOpen={() => handleOpen(item.id)}
+            />
+          ))}
       </Cbtdiv>
     </Cbt>
   );

@@ -1,16 +1,34 @@
 "use client";
-import React, { useState } from "react";
-import api from "@/services/api";
+import React, { useState, useEffect } from "react"; // useEffect 추가
+import api from "./api";
 import styled from "styled-components";
 import CustomerCenter from "./CustomerCenter";
 import CustomerFAQ from "./CustomerFAQ";
 
 function Customer() {
   const url = "http://localhost:3001/Customer";
-  const data = api(url);
+
+  const [data, setData] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
 
   const [open, setOpen] = useState(null);
   const [selectedCategory, setSelectedCategory] = useState("전체");
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const result = await api(url);
+        setData(result);
+      } catch (err) {
+        setError(err);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchData();
+  }, [url]);
 
   const handleOpen = (id) => {
     setOpen(open === id ? null : id);
@@ -24,6 +42,9 @@ function Customer() {
     selectedCategory === "전체"
       ? data
       : data.filter((item) => item.category === selectedCategory);
+
+  if (loading) return <div>Loading...</div>;
+  if (error) return <div>Error: {error.message}</div>;
 
   return (
     <Custom>

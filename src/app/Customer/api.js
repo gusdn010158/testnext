@@ -6,7 +6,7 @@ const api = async (url) => {
     return response.data;
   } catch (error) {
     console.error("API 호출 에러:", error);
-    return [];
+    throw error;
   }
 };
 
