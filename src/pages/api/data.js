@@ -1,6 +1,7 @@
 export default function handler(req, res) {
-  const { type } = req.query; // 클라이언트에서 전달된 type 파라미터
+  const { type = "MainItem" } = req.query; // 기본값 설정
 
+  console.log(type);
   // 하드코딩된 JSON 데이터
   const jsonData = {
     MainItem: [
@@ -53,6 +54,57 @@ export default function handler(req, res) {
         id: 10,
         name: "쉬운이사",
         img: "https://image.ohou.se/i/bucketplace-v2-development/uploads/shortcut/home_feed_shortcut_sets/167198021046015480.png?w=144",
+      },
+      {
+        id: 11,
+        name: "행운출첵",
+        img: "https://image.ohou.se/i/bucketplace-v2-development/uploads/shortcut/home_feed_shortcut_sets/170184318298899959.png?w=144",
+      },
+      {
+        id: 12,
+        name: "집들이",
+        img: "https://image.ohou.se/i/bucketplace-v2-development/uploads/shortcut/home_feed_shortcut_sets/167198010271968429.png?w=144",
+      },
+      {
+        id: 13,
+        name: "챌린지참여",
+        img: "https://image.ohou.se/i/bucketplace-v2-development/uploads/shortcut/home_feed_shortcut_sets/170736215082472666.png?w=144",
+      },
+      {
+        id: 14,
+        name: "장보기",
+        img: "https://image.ohou.se/i/bucketplace-v2-development/uploads/shortcut/home_feed_shortcut_sets/170358029767805279.png?w=144",
+      },
+
+      {
+        id: 15,
+        name: "빠른배송",
+        img: "https://image.ohou.se/i/bucketplace-v2-development/uploads/shortcut/home_feed_shortcut_sets/167198012024333402.png?w=144",
+      },
+      {
+        id: 16,
+        name: "리모델링",
+        img: "https://image.ohou.se/i/bucketplace-v2-development/uploads/shortcut/home_feed_shortcut_sets/167198022841390557.png?w=144",
+      },
+      {
+        id: 17,
+        name: "월간가구세일",
+        img: "https://image.ohou.se/i/bucketplace-v2-development/uploads/shortcut/home_feed_shortcut_sets/171047997632767967.png?w=144",
+      },
+      {
+        id: 18,
+        name: "오늘의달",
+        img: "https://image.ohou.se/i/bucketplace-v2-development/uploads/shortcut/home_feed_shortcut_sets/167198007152582471.png?w=144",
+      },
+      {
+        id: 19,
+        name: "수납꿀팁",
+        img: "https://image.ohou.se/i/bucketplace-v2-development/uploads/shortcut/home_feed_shortcut_sets/169880736853477508.png?w=144",
+      },
+      {
+        id: 20,
+        name: "행운출첵",
+        img: "https://image.ohou.se/i/bucketplace-v2-development/uploads/shortcut/home_feed_shortcut_sets/170184318298899959.png?w=144",
       },
     ],
     ctitem: [

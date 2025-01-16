@@ -5,7 +5,6 @@ import "slick-carousel/slick/slick-theme.css";
 import styled from "styled-components";
 import api from "@/services/api";
 const Slick = ({ arrowStyle }) => {
-  const url2 = "/api/data?type=MainItem";
   const settings = {
     infinite: true,
     speed: 1000, // 넘어가는 속도 (ms)
@@ -17,14 +16,14 @@ const Slick = ({ arrowStyle }) => {
     pauseOnHover: true,
   };
 
-  const data2 = api(url2);
-  const store = data2.slice(21, 36);
+  const data2 = api("/api/data?type=MainItem");
+  // const store = data2.slice(21, 36);
   return (
     <StyledSlider {...settings} arrowStyle={arrowStyle}>
-      {store.map((slide, index) => (
+      {data2.map((slide, index) => (
         <Slidiv key={index}>
           <Sliderimg src={slide.img} alt={`Slide ${index}`} />
-          <Sliderdiv>{slide.name}</Sliderdiv>
+          <div>{slide.name}</div>
         </Slidiv>
       ))}
     </StyledSlider>
@@ -79,6 +78,5 @@ const Sliderimg = styled.img`
     height: 120%;
   }
 `;
-const Sliderdiv = styled.div``;
 
 export default Slick;
