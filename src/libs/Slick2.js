@@ -5,7 +5,7 @@ import "slick-carousel/slick/slick-theme.css";
 import styled from "styled-components";
 import api from "@/services/api";
 const Slick = ({ arrowStyle }) => {
-  const url2 = "http://localhost:3001/mainitem";
+  const url2 = "/api/data?type=MainItem";
   const settings = {
     infinite: true,
     speed: 1000, // 넘어가는 속도 (ms)

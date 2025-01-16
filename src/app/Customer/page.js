@@ -6,7 +6,7 @@ import CustomerCenter from "./CustomerCenter";
 import CustomerFAQ from "./CustomerFAQ";
 
 function Customer() {
-  const url = "http://localhost:3001/Customer";
+  const url = "/api/data?type=Customer";
 
   const [data, setData] = useState([]);
   const [loading, setLoading] = useState(true);

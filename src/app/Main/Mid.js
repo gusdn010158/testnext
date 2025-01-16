@@ -2,7 +2,7 @@ import styles from "../main.module.css";
 import React from "react";
 import api from "@/services/api";
 function Mid({ last, first, itemWidth }) {
-  const storeurl = "http://localhost:3001/store";
+  const storeurl = "/api/data?type=store";
 
   const datastore = api(storeurl);
   const data = datastore.slice(first - 1, last);

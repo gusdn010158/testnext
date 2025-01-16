@@ -8,7 +8,7 @@ import "slick-carousel/slick/slick-theme.css";
 
 import SlickComponent from "@/libs/Slick";
 export default function Slick() {
-  const url = "http://localhost:3001/ctitem";
+  const url = "/api/data?type=ctitem";
 
   const data = api(url);
 

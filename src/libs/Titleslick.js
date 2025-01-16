@@ -7,7 +7,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import styled from "styled-components";
 function Titleslick() {
-  const storeurl = "http://localhost:3001/mainitem";
+  const storeurl = "/api/data?type=MainItem";
 
   const datastore = api(storeurl);
   var settings = {

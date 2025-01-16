@@ -8,7 +8,7 @@ import Storesmall from "./Storesmall";
 import StoreMain from "./StoreMain";
 import Link from "next/link";
 function page() {
-  const url = "http://localhost:3001/storeitem";
+  const url = "/api/data?type=storeitem";
 
   const data = api(url);
 

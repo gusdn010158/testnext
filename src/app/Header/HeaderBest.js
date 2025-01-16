@@ -7,7 +7,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 const SlickUIComponent = ({ first, last }) => {
-  const url = "http://localhost:3001/mainitem";
+  const url = "/api/data?type=MainItem";
 
   const data = api(url);
   const [toast, setToast] = useState(false);

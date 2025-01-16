@@ -9,7 +9,7 @@ import HeaderBest from "./HeaderBest";
 import Headertoast from "./Headertoast";
 
 function Headers() {
-  const url = "http://localhost:3001/Header";
+  const url = "/api/data?type=Header";
   const Header = api(url);
   const [index, setIndex] = useState(null);
 

@@ -3,7 +3,7 @@ import api from "@/services/api";
 import Link from "next/link";
 import styles from "../Store/store.module.css";
 function StoreMain({ first, last, itemWidth, itemheight }) {
-  const fristurl = "http://localhost:3001/store";
+  const fristurl = "/api/data?type=store";
   const friststoredata = api(fristurl);
 
   const store = friststoredata.slice(first - 1, last);

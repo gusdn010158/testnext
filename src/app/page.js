@@ -56,8 +56,8 @@ const arrowStyle3 = {
 };
 
 export default function Home() {
-  const data = api("http://localhost:3001/MainSide");
-  const ctData = api("http://localhost:3001/ctitem");
+  const data = api("/api/data?type=MainSide");
+  const ctData = api("/api/data?type=ctitem");
 
   const renderSectionHeader = (title, link = "/") => (
     <div className={styles.Midtop}>
