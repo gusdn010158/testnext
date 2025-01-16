@@ -3,58 +3,58 @@ export default function handler(req, res) {
 
   // 하드코딩된 JSON 데이터
   const jsonData = {
-    // MainItem: [
-    //   {
-    //     id: 1,
-    //     name: "월간가구세일",
-    //     img: "https://image.ohou.se/i/bucketplace-v2-development/uploads/shortcut/home_feed_shortcut_sets/171047997632767967.png?w=144",
-    //   },
-    //   {
-    //     id: 2,
-    //     name: "오늘의달",
-    //     img: "https://image.ohou.se/i/bucketplace-v2-development/uploads/shortcut/home_feed_shortcut_sets/167198007152582471.png?w=144",
-    //   },
-    //   {
-    //     id: 3,
-    //     name: "수납꿀팁",
-    //     img: "https://image.ohou.se/i/bucketplace-v2-development/uploads/shortcut/home_feed_shortcut_sets/169880736853477508.png?w=144",
-    //   },
-    //   {
-    //     id: 4,
-    //     name: "행운출첵",
-    //     img: "https://image.ohou.se/i/bucketplace-v2-development/uploads/shortcut/home_feed_shortcut_sets/170184318298899959.png?w=144",
-    //   },
-    //   {
-    //     id: 5,
-    //     name: "집들이",
-    //     img: "https://image.ohou.se/i/bucketplace-v2-development/uploads/shortcut/home_feed_shortcut_sets/167198010271968429.png?w=144",
-    //   },
-    //   {
-    //     id: 6,
-    //     name: "챌린지참여",
-    //     img: "https://image.ohou.se/i/bucketplace-v2-development/uploads/shortcut/home_feed_shortcut_sets/170736215082472666.png?w=144",
-    //   },
-    //   {
-    //     id: 7,
-    //     name: "장보기",
-    //     img: "https://image.ohou.se/i/bucketplace-v2-development/uploads/shortcut/home_feed_shortcut_sets/170358029767805279.png?w=144",
-    //   },
-    //   {
-    //     id: 8,
-    //     name: "빠른배송",
-    //     img: "https://image.ohou.se/i/bucketplace-v2-development/uploads/shortcut/home_feed_shortcut_sets/167198012024333402.png?w=144",
-    //   },
-    //   {
-    //     id: 9,
-    //     name: "리모델링",
-    //     img: "https://image.ohou.se/i/bucketplace-v2-development/uploads/shortcut/home_feed_shortcut_sets/167198022841390557.png?w=144",
-    //   },
-    //   {
-    //     id: 10,
-    //     name: "쉬운이사",
-    //     img: "https://image.ohou.se/i/bucketplace-v2-development/uploads/shortcut/home_feed_shortcut_sets/167198021046015480.png?w=144",
-    //   },
-    // ],
+    MainItem: [
+      {
+        id: 1,
+        name: "월간가구세일",
+        img: "https://image.ohou.se/i/bucketplace-v2-development/uploads/shortcut/home_feed_shortcut_sets/171047997632767967.png?w=144",
+      },
+      {
+        id: 2,
+        name: "오늘의달",
+        img: "https://image.ohou.se/i/bucketplace-v2-development/uploads/shortcut/home_feed_shortcut_sets/167198007152582471.png?w=144",
+      },
+      {
+        id: 3,
+        name: "수납꿀팁",
+        img: "https://image.ohou.se/i/bucketplace-v2-development/uploads/shortcut/home_feed_shortcut_sets/169880736853477508.png?w=144",
+      },
+      {
+        id: 4,
+        name: "행운출첵",
+        img: "https://image.ohou.se/i/bucketplace-v2-development/uploads/shortcut/home_feed_shortcut_sets/170184318298899959.png?w=144",
+      },
+      {
+        id: 5,
+        name: "집들이",
+        img: "https://image.ohou.se/i/bucketplace-v2-development/uploads/shortcut/home_feed_shortcut_sets/167198010271968429.png?w=144",
+      },
+      {
+        id: 6,
+        name: "챌린지참여",
+        img: "https://image.ohou.se/i/bucketplace-v2-development/uploads/shortcut/home_feed_shortcut_sets/170736215082472666.png?w=144",
+      },
+      {
+        id: 7,
+        name: "장보기",
+        img: "https://image.ohou.se/i/bucketplace-v2-development/uploads/shortcut/home_feed_shortcut_sets/170358029767805279.png?w=144",
+      },
+      {
+        id: 8,
+        name: "빠른배송",
+        img: "https://image.ohou.se/i/bucketplace-v2-development/uploads/shortcut/home_feed_shortcut_sets/167198012024333402.png?w=144",
+      },
+      {
+        id: 9,
+        name: "리모델링",
+        img: "https://image.ohou.se/i/bucketplace-v2-development/uploads/shortcut/home_feed_shortcut_sets/167198022841390557.png?w=144",
+      },
+      {
+        id: 10,
+        name: "쉬운이사",
+        img: "https://image.ohou.se/i/bucketplace-v2-development/uploads/shortcut/home_feed_shortcut_sets/167198021046015480.png?w=144",
+      },
+    ],
     ctitem: [
       {
         img: "https://image.ohou.se/i/bucketplace-v2-development/uploads/cards/snapshots/169396345621785215.jpeg?w=256&h=342&c=c",
